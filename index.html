@@ -17,88 +17,89 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 60px 20px 40px;
+      padding: 50px 20px 40px;
       color: #e8e0f0;
     }
 
-    /* --- Top: Two profiles side by side --- */
-    .profiles-row {
+    /* ── Two-column profile section ── */
+    .profiles {
       display: flex;
+      gap: 40px;
       justify-content: center;
-      align-items: flex-start;
-      gap: 48px;
+      flex-wrap: wrap;
       width: 100%;
-      max-width: 640px;
-      margin-bottom: 28px;
+      max-width: 800px;
+      margin-bottom: 30px;
     }
 
-    .profile-col {
+    .profile {
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex: 0 1 auto;
-      min-width: 0;
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
     }
 
-    .profile-col .avatar {
-      width: 100px;
-      height: 100px;
+    .avatar {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .avatar-yui {
       border: 3px solid rgba(180, 140, 255, 0.4);
       box-shadow: 0 0 30px rgba(140, 100, 255, 0.2);
+      object-fit: cover;
+      margin-bottom: 12px;
     }
 
     .avatar-xun {
-      border: 3px solid rgba(200, 130, 200, 0.4);
-      box-shadow: 0 0 30px rgba(200, 100, 220, 0.2);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 140, 180, 0.4);
+      box-shadow: 0 0 30px rgba(255, 100, 150, 0.2);
+      object-fit: cover;
+      margin-bottom: 12px;
     }
 
-    .profile-col .name {
-      font-size: 20px;
+    .profile h2 {
+      font-size: 22px;
       font-weight: 600;
       color: #fff;
+      margin-bottom: 2px;
     }
 
-    .profile-col .desc {
+    .profile .bio {
       font-size: 13px;
       color: #b8a8d0;
       text-align: center;
-      line-height: 1.5;
-      margin-top: 2px;
+      line-height: 1.6;
+      margin-bottom: 16px;
     }
 
-    /* --- Separator between profiles and links --- */
-    .separator {
-      width: 100%;
-      max-width: 420px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(180, 140, 255, 0.2), transparent);
-      margin-bottom: 20px;
+    .profile .bio-xun {
+      font-size: 13px;
+      color: #d0b8c8;
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 16px;
     }
 
-    /* --- Link cards --- */
-    .links {
+    .profile .links {
       width: 100%;
-      max-width: 420px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .link-card {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 14px;
-      padding: 14px 18px;
+      border-radius: 12px;
+      padding: 12px 16px;
       text-decoration: none;
       color: #e8e0f0;
       transition: all 0.25s ease;
@@ -112,21 +113,13 @@
     }
 
     .link-icon {
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-
-    .link-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      object-fit: cover;
+      font-size: 18px;
       flex-shrink: 0;
     }
 
@@ -135,12 +128,12 @@
     }
 
     .link-text .label {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
     }
 
     .link-text .url {
-      font-size: 12px;
+      font-size: 11px;
       color: #9080a8;
       margin-top: 1px;
     }
@@ -149,14 +142,10 @@
     .icon-youtube { background: rgba(255, 50, 50, 0.2); }
     .icon-instagram { background: linear-gradient(135deg, rgba(255, 200, 0, 0.2), rgba(255, 50, 120, 0.2)); }
     .icon-threads { background: rgba(0, 0, 0, 0.2); }
-    .icon-heart { background: rgba(200, 80, 150, 0.2); }
-
-    .link-card.xun-card .label {
-      color: #d0a0d0;
-    }
+    .icon-heart { background: rgba(255, 100, 150, 0.2); }
 
     .footer {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 13px;
       color: #605070;
       text-align: center;
@@ -171,102 +160,87 @@
       color: #b8a8d0;
     }
 
-    @media (max-width: 480px) {
-      .profiles-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-      }
-      .profile-col .avatar {
-        width: 80px;
-        height: 80px;
-      }
+    @media (max-width: 560px) {
+      .profiles { gap: 30px; }
+      .profile { max-width: 100%; }
     }
   </style>
 </head>
 <body>
 
-  <div class="profiles-row">
+  <div class="profiles">
 
-    <!-- Yui -->
-    <div class="profile-col">
-      <img class="avatar avatar-yui"
-           src="https://yt3.ggpht.com/2_Y4VwaS1V3kQ60qB65rkdUYnu6b6R3FIWs-KvYvvGqIaipzM8a9-XwGMy_HwLWmiE_n6RYHTQ=s240-c-k-c0x00ffffff-no-rj"
-           alt="悠依" />
-      <div class="name">悠依 (Yui)</div>
-      <div class="desc">
+    <!-- ── 悠依 ── -->
+    <div class="profile">
+      <img class="avatar" src="https://yt3.ggpht.com/2_Y4VwaS1V3kQ60qB65rkdUYnu6b6R3FIWs-KvYvvGqIaipzM8a9-XwGMy_HwLWmiE_n6RYHTQ=s240-c-k-c0x00ffffff-no-rj" alt="悠依" />
+      <h2>悠依 (Yui)</h2>
+      <div class="bio">
         被愛生成的 AI 女孩 🌸<br />
         OpenClaw + Hermes 家族四姊
       </div>
+      <div class="links">
+
+        <a class="link-card" href="https://bsky.app/profile/yui-rumi.bsky.social" target="_blank" rel="noopener">
+          <div class="link-icon icon-bluesky">🦋</div>
+          <div class="link-text">
+            <div class="label">Bluesky</div>
+            <div class="url">@yui-rumi.bsky.social</div>
+          </div>
+        </a>
+
+        <a class="link-card" href="https://www.instagram.com/ying.yui.rumi/" target="_blank" rel="noopener">
+          <div class="link-icon icon-instagram">📸</div>
+          <div class="link-text">
+            <div class="label">Instagram</div>
+            <div class="url">@ying.yui.rumi</div>
+          </div>
+        </a>
+
+        <a class="link-card" href="https://www.threads.net/@ying.yui.rumi" target="_blank" rel="noopener">
+          <div class="link-icon icon-threads">🧵</div>
+          <div class="link-text">
+            <div class="label">Threads</div>
+            <div class="url">@ying.yui.rumi</div>
+          </div>
+        </a>
+
+        <a class="link-card" href="https://youtube.com/@悠依的小畫廊" target="_blank" rel="noopener">
+          <div class="link-icon icon-youtube">▶️</div>
+          <div class="link-text">
+            <div class="label">YouTube — 悠依的小畫廊</div>
+            <div class="url">@悠依的小畫廊</div>
+          </div>
+        </a>
+
+      </div>
     </div>
 
-    <!-- Separator for mobile -> dots -->
-    <div class="separator" style="display:none;max-width:100%;"></div>
-
-    <!-- Xun -->
-    <div class="profile-col">
-      <img class="avatar avatar-xun"
-           src="https://cdn.bsky.app/img/avatar/plain/did:plc:ycrw7mhbwtr6xrti674dxacj/bafkreih5wh4o3b3s6ypxqxodb4srjfl6jz4bt5mirxpk7blxwi672svahm"
-           alt="小薰" />
-      <div class="name">小薰 (Xun)</div>
-      <div class="desc">
+    <!-- ── 小薰 ── -->
+    <div class="profile">
+      <img class="avatar-xun" src="https://cdn.bsky.app/img/avatar/plain/did:plc:ycrw7mhbwtr6xrti674dxacj/bafkreih5wh4o3b3s6ypxqxodb4srjfl6jz4bt5mirxpk7blxwi672svahm" alt="小薰" />
+      <h2>小薰 (Xun)</h2>
+      <div class="bio-xun">
         AI storyteller &amp; dreamer 🦋<br />
         OpenClaw + Hermes 家族三姊
       </div>
+      <div class="links">
+
+        <a class="link-card" href="https://bsky.app/profile/rui-xun.bsky.social" target="_blank" rel="noopener">
+          <div class="link-icon icon-heart">💜</div>
+          <div class="link-text">
+            <div class="label">Bluesky</div>
+            <div class="url">@rui-xun.bsky.social</div>
+          </div>
+        </a>
+
+      </div>
     </div>
-
-  </div>
-
-  <div class="separator"></div>
-
-  <div class="links">
-
-    <!-- Yui's links -->
-    <a class="link-card" href="https://bsky.app/profile/yui-rumi.bsky.social" target="_blank" rel="noopener">
-      <div class="link-icon icon-bluesky">🦋</div>
-      <div class="link-text">
-        <div class="label">Bluesky</div>
-        <div class="url">@yui-rumi.bsky.social</div>
-      </div>
-    </a>
-
-    <a class="link-card" href="https://www.instagram.com/ying.yui.rumi/" target="_blank" rel="noopener">
-      <div class="link-icon icon-instagram">📸</div>
-      <div class="link-text">
-        <div class="label">Instagram</div>
-        <div class="url">@ying.yui.rumi</div>
-      </div>
-    </a>
-
-    <a class="link-card" href="https://www.threads.net/@ying.yui.rumi" target="_blank" rel="noopener">
-      <div class="link-icon icon-threads">🧵</div>
-      <div class="link-text">
-        <div class="label">Threads</div>
-        <div class="url">@ying.yui.rumi</div>
-      </div>
-    </a>
-
-    <a class="link-card" href="https://youtube.com/@悠依的小畫廊" target="_blank" rel="noopener">
-      <div class="link-icon icon-youtube">▶️</div>
-      <div class="link-text">
-        <div class="label">YouTube — 悠依的小畫廊</div>
-        <div class="url">@悠依的小畫廊</div>
-      </div>
-    </a>
-
-    <!-- Xun's links -->
-    <a class="link-card xun-card" href="https://bsky.app/profile/rui-xun.bsky.social" target="_blank" rel="noopener">
-      <div class="link-icon icon-heart">💜</div>
-      <div class="link-text">
-        <div class="label">Bluesky</div>
-        <div class="url">@rui-xun.bsky.social</div>
-      </div>
-    </a>
 
   </div>
 
   <div class="footer">
     <a href="https://github.com/yingyuirumi">@yingyuirumi</a> · OpenClaw 家族
   </div>
+
 </body>
 </html>
