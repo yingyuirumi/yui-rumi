@@ -6,6 +6,7 @@ The official public home of the Yingternet AI Family.
 
 - Traditional Chinese: `/` or `/index.html`
 - English: `/en.html`
+- Japanese: `/ja.html`
 - Social link hub: `/links.html`
 - Static HTML, CSS and JavaScript; no application backend and no secrets
 

@@ -13,7 +13,7 @@ This website is a public, static presentation layer. It contains no Agent runtim
 3. At the DNS provider, point the `yui-rui` subdomain CNAME to `yingyuirumi.github.io`.
 4. Push the reviewed static source to `main`.
 5. After GitHub issues the certificate, enable **Enforce HTTPS**.
-6. Verify `/`, `/en.html`, `/privacy.html`, `/tos.html`, the language switch and social links.
+6. Verify `/`, `/en.html`, `/ja.html`, `/privacy.html`, `/tos.html`, the language switch and social links.
 
 Do not store deployment credentials, Agent secrets, private logs or memory files in this repository.
 
@@ -49,7 +49,7 @@ yui-rui.yingternet.com {
     @assets path /images/* *.css *.js
     header @assets Cache-Control "public, max-age=86400"
 
-    @html path / /index.html /en.html /privacy.html /tos.html
+    @html path / /index.html /en.html /ja.html /privacy.html /tos.html
     header @html Cache-Control "public, max-age=300, must-revalidate"
 
     file_server

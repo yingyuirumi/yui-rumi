@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at 89% 27%, rgba(40, 143, 178, 0.1), transparent 33rem),
     var(--bg);
   color: var(--text);
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Noto Sans TC", sans-serif;
   line-height: 1.65;
   overflow-x: hidden;
 }
@@ -101,8 +101,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-nav a:hover, .site-nav a:focus-visible { color: #fff; }
 .site-nav .nav-cta { padding: 9px 15px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); }
 .site-nav .lang-switch { color: var(--cyan); font-size: 10px; letter-spacing: .1em; }
-.mobile-header-actions { display: flex; align-items: center; gap: 5px; }
-.lang-switch-mobile { display: none; align-items: center; justify-content: center; min-width: 42px; height: 38px; padding: 0 10px; border: 1px solid var(--line); border-radius: 11px; color: var(--cyan); background: rgba(110,231,242,.045); font-size: 10px; font-weight: 850; letter-spacing: .08em; text-decoration: none; }
+.mobile-header-actions { display: flex; align-items: center; gap: 4px; }
+.lang-switch-mobile { display: none; align-items: center; justify-content: center; min-width: 34px; height: 38px; padding: 0 8px; border: 1px solid var(--line); border-radius: 11px; color: var(--cyan); background: rgba(110,231,242,.045); font-size: 10px; font-weight: 850; letter-spacing: .06em; text-decoration: none; }
 .lang-switch-mobile:hover { border-color: rgba(110,231,242,.36); background: rgba(110,231,242,.09); }
 .menu-toggle { display: none; border: 0; background: transparent; color: #fff; }
 
