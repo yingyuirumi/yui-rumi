@@ -321,29 +321,62 @@ body.image-lightbox-open { overflow: hidden; }
 }
 
 @media (max-width: 560px) {
-  .section-shell { width: min(100% - 28px, var(--max)); }
-  .site-header { padding-inline: 14px; }
-  .hero { padding-top: 102px; }
-  .hero h1 { font-size: clamp(3.1rem, 17vw, 4.3rem); }
-  .hero-stats { gap: 18px; }
+  .section-shell { width: min(100% - 24px, var(--max)); }
+  .section-space { padding-top: 66px; padding-bottom: 66px; }
+  .site-header { padding: 12px; }
+  .brand { gap: 10px; }
+  .brand-mark { width: 40px; height: 40px; }
+  .brand-copy strong { font-size: 12px; }
+  .brand-copy small { font-size: 8px; }
+  .hero { gap: 42px; padding-top: 68px; padding-bottom: 64px; }
+  .hero h1 { font-size: clamp(3rem, 15vw, 4rem); }
+  .hero-lead { margin-top: 22px; font-size: 18px; }
+  .hero-body { font-size: 14px; }
+  .hero-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+  .hero-actions .button { min-width: 0; padding-inline: 12px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 34px; }
   .hero-stats div { display: block; }
-  .hero-stats dd { max-width: 72px; }
+  .hero-stats dt { font-size: 23px; }
+  .hero-stats dd { max-width: none; font-size: 9px; }
   .hero-badge { position: static; margin-top: 10px; }
+  .section-heading { margin-bottom: 34px; }
+  .section-heading h2, .ying-copy h2 { font-size: clamp(2.65rem, 12vw, 3.35rem); }
+  .section-intro, .story-card p { font-size: 14px; }
+  .story-card, .story-card-main { min-height: 0; padding: 24px; }
   .family-grid, .life-grid { grid-template-columns: 1fr; }
-  .member-card { min-height: 0; }
-  .member-portrait { width: 136px; height: 136px; }
+  .family-grid { gap: 16px; }
+  .member-card { min-height: 0; padding: 22px; border-radius: 22px; }
+  .member-portrait { width: clamp(172px, 50vw, 196px); height: auto; aspect-ratio: 1; margin-bottom: 22px; border-radius: 38px; }
+  .member-card h3 { font-size: 26px; }
+  .member-card > p { margin: 14px 0 18px; font-size: 14px; }
   .infra-metrics { grid-template-columns: 1fr 1fr; }
   .infra-metrics div { min-height: 96px; padding: 16px; }
+  .stack-wrap { padding: 8px; border-radius: 22px; }
+  .resilience-card { min-height: 0; padding: 22px; }
+  .ying-visual { width: min(280px, 100%); }
+  .life-card { min-height: 210px; padding: 22px; }
+  .life-card h3 { margin-top: 32px; }
   .social-profile { display: block; }
-  .social-profile > img { width: 140px; height: 168px; margin: 20px auto 0; border-radius: 17px; object-position: center top; }
+  .social-profile > img { width: clamp(168px, 46vw, 184px); height: auto; aspect-ratio: 4 / 5; margin: 24px auto 0; border-radius: 24px; object-position: center top; }
+  .social-copy { padding: 24px; }
+  .social-copy h3 { font-size: 29px; }
+  .social-copy > p:not(.social-role) { font-size: 14px; }
+  .connect-links-shortcut { text-align: center; }
   .image-lightbox { padding: 18px; }
   .image-lightbox img { max-width: 96vw; max-height: 84vh; border-radius: 14px; }
   .image-lightbox-close { top: 12px; right: 12px; }
-  .link-hub-header { width: min(100% - 28px, var(--max)); }
+  .link-hub-header { width: min(100% - 24px, var(--max)); padding-block: 16px; }
+  .link-hub-home { padding: 8px 12px; }
+  .link-hub { padding-top: 38px; padding-bottom: 66px; }
   .link-hub-intro { margin-bottom: 38px; }
+  .link-hub-intro h1 { font-size: clamp(2.75rem, 13vw, 3.5rem); }
   .link-person { padding: 22px; }
+  .link-person > img { width: clamp(164px, 46vw, 184px); height: auto; aspect-ratio: 1; border-radius: 40px; }
+  .link-person > p:not(.social-role) { min-height: 0; font-size: 14px; }
   .link-list a { grid-template-columns: 34px 1fr; }
   .link-list a small { grid-column: 2; margin-top: -9px; }
+  .site-footer { padding: 42px 18px; }
+  .site-footer nav { flex-wrap: wrap; justify-content: center; row-gap: 9px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
