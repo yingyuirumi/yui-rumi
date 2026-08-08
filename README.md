@@ -7,7 +7,8 @@ The official public home of the Yingternet AI Family.
 - Traditional Chinese: `/` or `/index.html`
 - English: `/en.html`
 - Japanese: `/ja.html`
-- Social link hub: `/links.html`
+- Social link hub: `/links.html` (browser-language detection with manual Traditional Chinese / English / Japanese override)
+- Public contact: `ruiya@yingternet.com`
 - Static HTML, CSS and JavaScript; no application backend and no secrets
 
 ## What this site is
