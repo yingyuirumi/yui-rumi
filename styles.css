@@ -101,6 +101,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-nav a:hover, .site-nav a:focus-visible { color: #fff; }
 .site-nav .nav-cta { padding: 9px 15px; border: 1px solid var(--line); border-radius: 999px; color: var(--text); }
 .site-nav .lang-switch { color: var(--cyan); font-size: 10px; letter-spacing: .1em; }
+.mobile-header-actions { display: flex; align-items: center; gap: 5px; }
+.lang-switch-mobile { display: none; align-items: center; justify-content: center; min-width: 42px; height: 38px; padding: 0 10px; border: 1px solid var(--line); border-radius: 11px; color: var(--cyan); background: rgba(110,231,242,.045); font-size: 10px; font-weight: 850; letter-spacing: .08em; text-decoration: none; }
+.lang-switch-mobile:hover { border-color: rgba(110,231,242,.36); background: rgba(110,231,242,.09); }
 .menu-toggle { display: none; border: 0; background: transparent; color: #fff; }
 
 .hero {
@@ -302,12 +305,13 @@ body.image-lightbox-open { overflow: hidden; }
   .section-heading-row { display: block; }
   .section-heading-row .section-intro { margin-top: 20px; }
   .menu-toggle { display: grid; gap: 5px; padding: 9px; cursor: pointer; }
+  .lang-switch-mobile { display: inline-flex; }
   .menu-toggle span:not(.sr-only) { display: block; width: 22px; height: 2px; border-radius: 2px; background: currentColor; }
   .site-nav { position: absolute; top: 74px; right: 16px; left: 16px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px; border: 1px solid var(--line); border-radius: 16px; background: rgba(12,9,22,.97); box-shadow: 0 25px 60px rgba(0,0,0,.45); }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 12px 13px; }
   .site-nav .nav-cta { border-radius: 10px; }
-  .site-nav .lang-switch { border-top: 1px solid var(--line); margin-top: 4px; padding-top: 14px; }
+  .site-nav .lang-switch { display: none; }
   .story-grid { grid-template-columns: 1fr; }
   .story-card-main { grid-row: auto; }
   .stack-layer, .layer-agent { grid-template-columns: 1fr; gap: 5px; padding: 18px; }
