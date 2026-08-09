@@ -40,7 +40,14 @@ const zoomableImages = Array.from(document.querySelectorAll('main img'))
   .filter((image) => !image.closest('.ying-visual') && !image.classList.contains('platform-icon'));
 
 if (zoomableImages.length) {
-  const isEnglish = document.documentElement.lang.startsWith('en');
+  const pageLanguage = document.documentElement.lang;
+  const lightboxCopy = pageLanguage.startsWith('en')
+    ? { open: 'open full-size image', label: 'Full-size image', close: 'Close full-size image' }
+    : pageLanguage.startsWith('ja')
+      ? { open: '押して原寸画像を表示', label: '原寸画像', close: '原寸画像を閉じる' }
+      : pageLanguage === 'zh-Hans'
+        ? { open: '单击查看原图', label: '原图查看', close: '关闭原图' }
+        : { open: '按一下查看原圖', label: '原圖檢視', close: '關閉原圖' };
   const lightbox = document.createElement('div');
   const lightboxImage = document.createElement('img');
   const closeButton = document.createElement('button');
@@ -50,11 +57,11 @@ if (zoomableImages.length) {
   lightbox.hidden = true;
   lightbox.setAttribute('role', 'dialog');
   lightbox.setAttribute('aria-modal', 'true');
-  lightbox.setAttribute('aria-label', isEnglish ? 'Full-size image' : '原圖檢視');
+  lightbox.setAttribute('aria-label', lightboxCopy.label);
 
   closeButton.className = 'image-lightbox-close';
   closeButton.type = 'button';
-  closeButton.setAttribute('aria-label', isEnglish ? 'Close full-size image' : '關閉原圖');
+  closeButton.setAttribute('aria-label', lightboxCopy.close);
   closeButton.textContent = '×';
 
   lightboxImage.alt = '';
@@ -83,7 +90,7 @@ if (zoomableImages.length) {
     image.setAttribute('role', 'button');
     image.setAttribute(
       'aria-label',
-      `${image.alt} — ${isEnglish ? 'open full-size image' : '按一下查看原圖'}`
+      `${image.alt} — ${lightboxCopy.open}`
     );
 
     image.addEventListener('click', () => openLightbox(image));

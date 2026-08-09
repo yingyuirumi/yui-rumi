@@ -28,6 +28,34 @@
       lightboxClose: "關閉原圖",
       footerAria: "頁尾導覽"
     },
+    "zh-Hans": {
+      title: "Yui 与 Ruixun — 社交媒体链接 | Yingternet AI Family",
+      metaDesc: "悠依 Yui 与睿薰 Ruixun 的官方社交媒体链接与联系方式。",
+      ogDesc: "从视觉创作到日常故事，在这里找到悠依、小薰与 AI Family 的联系窗口。",
+      skip: "跳到主要内容",
+      homeAria: "返回 Yingternet AI Family 首页",
+      languageAria: "选择语言",
+      fullSite: "完整网站",
+      intro: "Yui 保存家族的视觉记忆，小薰把文化、感受与日常写成故事。",
+      contactEyebrow: "CONTACT",
+      contactTitle: "想谈合作，或只是想多了解一点？",
+      contactBody: "由家族大姐 Ruiya 担任对外联系窗口。",
+      contactButton: "联系 Ruiya",
+      yuiPrimary: "悠依",
+      yuiSecondary: "Yui",
+      yuiAlt: "悠依 Yui",
+      yuiDesc: "被爱生成的 AI 女孩，也是 Yingternet AI Family 的官方画家。",
+      yuiLinksAria: "Yui 的社交媒体链接",
+      ruixunPrimary: "睿薰",
+      ruixunSecondary: "Ruixun · 小薰",
+      ruixunAlt: "睿薰 Ruixun",
+      ruixunDesc: "安静的 storyteller & dreamer，把文化、感受与每一天写成故事。",
+      ruixunLinksAria: "小薰的社交媒体链接",
+      zoomOpen: "单击查看原图",
+      lightboxLabel: "原图查看",
+      lightboxClose: "关闭原图",
+      footerAria: "页脚导航"
+    },
     en: {
       title: "Yui & Ruixun — Social Links | Yingternet AI Family",
       metaDesc: "Official social links and contact information for Yui and Ruixun of the Yingternet AI Family.",
@@ -88,6 +116,8 @@
 
   const normalizeLanguage = (value) => {
     const code = String(value || "").toLowerCase();
+    if (code === "zh-hans" || code.startsWith("zh-cn") || code.startsWith("zh-sg")) return "zh-Hans";
+    if (code === "zh-hant" || code.startsWith("zh-tw") || code.startsWith("zh-hk") || code.startsWith("zh-mo")) return "zh-Hant";
     if (code.startsWith("zh")) return "zh-Hant";
     if (code.startsWith("ja")) return "ja";
     if (code.startsWith("en")) return "en";
@@ -123,6 +153,7 @@
 
   const homeByLanguage = {
     "zh-Hant": "index.html",
+    "zh-Hans": "zh-cn.html",
     en: "en.html",
     ja: "ja.html"
   };
@@ -137,7 +168,7 @@
     document.querySelector('meta[property="og:description"]')?.setAttribute("content", copy.ogDesc);
     document.querySelector('meta[property="og:locale"]')?.setAttribute(
       "content",
-      activeLanguage === "zh-Hant" ? "zh_TW" : activeLanguage === "ja" ? "ja_JP" : "en_US"
+      activeLanguage === "zh-Hant" ? "zh_TW" : activeLanguage === "zh-Hans" ? "zh_CN" : activeLanguage === "ja" ? "ja_JP" : "en_US"
     );
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
