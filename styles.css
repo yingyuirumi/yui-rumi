@@ -257,6 +257,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .link-hub-actions { display: flex; align-items: center; justify-content: flex-end; gap: 9px; }
 .link-language-switch { display: inline-flex; align-items: center; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.035); }
 .link-language-switch button { display: grid; place-items: center; min-width: 31px; height: 31px; padding: 0 7px; border: 0; border-radius: 8px; color: var(--dim); background: transparent; font: 800 10px/1 Inter, sans-serif; cursor: pointer; }
+.link-language-switch button[hidden] { display: none; }
 .link-language-switch button:hover { color: #fff; background: rgba(255,255,255,.07); }
 .link-language-switch button[aria-pressed="true"] { color: #0b0814; background: var(--cyan); box-shadow: 0 4px 14px rgba(110,231,242,.18); }
 .link-hub-home { min-width: auto; padding: 9px 15px; font-size: 11px; }

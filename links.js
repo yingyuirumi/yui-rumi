@@ -192,7 +192,9 @@
       link.setAttribute("href", homeByLanguage[activeLanguage]);
     });
     document.querySelectorAll("[data-lang-choice]").forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.langChoice === activeLanguage));
+      const isActiveLanguage = button.dataset.langChoice === activeLanguage;
+      button.hidden = isActiveLanguage;
+      button.setAttribute("aria-pressed", String(isActiveLanguage));
     });
 
     if (remember) {
