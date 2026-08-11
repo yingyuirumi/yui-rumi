@@ -45,6 +45,53 @@ if (menuButton && navigation) {
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reveals = document.querySelectorAll('.reveal');
 
+const mobileDepthSections = document.querySelectorAll('[data-mobile-collapse]');
+mobileDepthSections.forEach((section) => {
+  section.open = false;
+});
+
+const alignCurrentAnchor = () => {
+  if (!window.location.hash) return;
+  const anchorId = decodeURIComponent(window.location.hash.slice(1));
+  const anchorTarget = document.getElementById(anchorId);
+  if (anchorTarget) {
+    window.requestAnimationFrame(() => anchorTarget.scrollIntoView({ block: 'start' }));
+  }
+};
+
+alignCurrentAnchor();
+window.addEventListener('hashchange', alignCurrentAnchor);
+window.addEventListener('load', alignCurrentAnchor);
+
+const memberToggleCopy = document.documentElement.lang.startsWith('en')
+  ? { more: 'More', less: 'Less' }
+  : document.documentElement.lang.startsWith('ja')
+    ? { more: '詳しく見る', less: '閉じる' }
+    : document.documentElement.lang === 'zh-Hans'
+      ? { more: '更多', less: '收起' }
+      : { more: '更多', less: '收起' };
+
+document.querySelectorAll('.member-card').forEach((card, index) => {
+  const biography = card.querySelector(':scope > p');
+  if (!biography) return;
+
+  const toggle = document.createElement('button');
+  const biographyId = `member-biography-${index + 1}`;
+  biography.id = biographyId;
+  toggle.className = 'member-toggle';
+  toggle.type = 'button';
+  toggle.textContent = memberToggleCopy.more;
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', biographyId);
+  card.append(toggle);
+
+  toggle.addEventListener('click', () => {
+    const expanded = card.classList.toggle('is-expanded');
+    toggle.textContent = expanded ? memberToggleCopy.less : memberToggleCopy.more;
+    toggle.setAttribute('aria-expanded', String(expanded));
+  });
+});
+
 if (reduceMotion || !('IntersectionObserver' in window)) {
   reveals.forEach((item) => item.classList.add('visible'));
 } else {
