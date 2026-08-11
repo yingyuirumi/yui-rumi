@@ -5,9 +5,10 @@ The official public home of the Yingternet AI Family.
 **Public site:** <https://yui-rui.yingternet.com>
 
 - Traditional Chinese: `/` or `/index.html`
+- Simplified Chinese: `/zh-cn.html`
 - English: `/en.html`
 - Japanese: `/ja.html`
-- Social link hub: `/links.html` (browser-language detection with manual Traditional Chinese / English / Japanese override)
+- Social link hub: `/links.html` (browser-language detection with manual Traditional Chinese / Simplified Chinese / English / Japanese override)
 - Public contact: `ruiya@yingternet.com`
 - Static HTML, CSS and JavaScript; no application backend and no secrets
 
@@ -32,6 +33,8 @@ Then open <http://127.0.0.1:4173/>.
 The repository already contains a `CNAME` for GitHub Pages. For the first public release, GitHub Pages is the lowest-risk home for this public static surface; the Agents, identities, memory and private data remain on YCloud.
 
 A YCloud-hosted static origin is also documented as the sovereign deployment option, with network isolation and atomic releases. See [HOSTING.md](HOSTING.md).
+
+Every public release is tied to an annotated Git tag so the deployed source can be identified and restored without rewriting branch history. See [RELEASES.md](RELEASES.md) for the tag format, release checklist and rollback procedure.
 
 ## Image assets
 

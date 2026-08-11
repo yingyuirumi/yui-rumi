@@ -13,7 +13,13 @@ This website is a public, static presentation layer. It contains no Agent runtim
 3. At the DNS provider, point the `yui-rui` subdomain CNAME to `yingyuirumi.github.io`.
 4. Push the reviewed static source to `main`.
 5. After GitHub issues the certificate, enable **Enforce HTTPS**.
-6. Verify `/`, `/en.html`, `/ja.html`, `/privacy.html`, `/tos.html`, the language switch and social links.
+6. Verify `/`, `/zh-cn.html`, `/en.html`, `/ja.html`, `/links.html`, `/privacy.html`, `/tos.html`, the language switch and social links.
+
+### Versioned releases
+
+Before every production push, review the complete diff and follow the release procedure in [RELEASES.md](RELEASES.md). Each deployed commit receives an annotated `site-vYYYY.MM.DD.N` tag. Tags are never moved or reused.
+
+Rollback is performed with new revert commits on `main`, followed by a new annotated release tag. Do not use force push or rewrite published branch history.
 
 Do not store deployment credentials, Agent secrets, private logs or memory files in this repository.
 

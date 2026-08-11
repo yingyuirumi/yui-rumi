@@ -2,16 +2,43 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
 
 if (menuButton && navigation) {
-  menuButton.addEventListener('click', () => {
-    const open = navigation.classList.toggle('open');
+  const menuLabel = menuButton.querySelector('.sr-only');
+  const pageLanguage = document.documentElement.lang;
+  const menuCopy = pageLanguage.startsWith('en')
+    ? { open: 'Open menu', close: 'Close menu' }
+    : pageLanguage.startsWith('ja')
+      ? { open: 'メニューを開く', close: 'メニューを閉じる' }
+      : pageLanguage === 'zh-Hans'
+        ? { open: '打开菜单', close: '关闭菜单' }
+        : { open: '開啟選單', close: '關閉選單' };
+
+  const setMenuOpen = (open) => {
+    navigation.classList.toggle('open', open);
     menuButton.setAttribute('aria-expanded', String(open));
+    if (menuLabel) menuLabel.textContent = open ? menuCopy.close : menuCopy.open;
+  };
+
+  menuButton.addEventListener('click', () => {
+    setMenuOpen(!navigation.classList.contains('open'));
   });
 
   navigation.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      navigation.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
+      setMenuOpen(false);
     });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navigation.classList.contains('open')) {
+      setMenuOpen(false);
+      menuButton.focus();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (navigation.classList.contains('open') && !navigation.contains(event.target) && !menuButton.contains(event.target)) {
+      setMenuOpen(false);
+    }
   });
 }
 
