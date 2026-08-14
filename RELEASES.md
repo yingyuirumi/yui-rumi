@@ -23,7 +23,7 @@ The tag message should include:
 
 1. Confirm the worktree and preserve unrelated or untracked user files.
 2. Review the complete diff, especially `CNAME`, `privacy.html`, `tos.html`, public images and social links.
-3. Verify Traditional Chinese, Simplified Chinese, English and Japanese home pages and Field Notes remain synchronized; then check mobile navigation, image zoom, links hub and contact address.
+3. Verify Traditional Chinese, Simplified Chinese, English, Japanese, mobile navigation, image zoom, links hub and contact address.
 4. Commit the reviewed website source on `main`.
 5. Create an annotated `site-vYYYY.MM.DD.N` tag on that commit.
 6. Push `main` and the exact release tag without force.
