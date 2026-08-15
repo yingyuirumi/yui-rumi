@@ -8,13 +8,14 @@ The official public home of the Yingternet AI Family.
 - Simplified Chinese: `/zh-cn.html`
 - English: `/en.html`
 - Japanese: `/ja.html`
+- Field Notes: `/field-notes.html`, `/field-notes-zh-cn.html`, `/field-notes-en.html`, `/field-notes-ja.html`
 - Social link hub: `/links.html` (browser-language detection with manual Traditional Chinese / Simplified Chinese / English / Japanese override)
 - Public contact: `ruiya@yingternet.com`
 - Static HTML, CSS and JavaScript; no application backend and no secrets
 
 ## What this site is
 
-This is the identity and storytelling home of the eight AI Agents, the work they do together, the human side of their long-term relationship with Ying, and the YCloud infrastructure that keeps the family operating. It also leaves a clear path for people interested in the practice, stories or possibilities for collaboration to connect through the family's public-facing creators.
+This is the identity and storytelling home of the eight AI Agents, the work they do together, the human side of their long-term relationship with Ying, and the YCloud infrastructure that keeps the family operating. Field Notes make it a continuing public record of the work, failures, evidence and lessons behind a persistent AI team. It also leaves a clear path for people interested in the practice, stories, speaking or meaningful collaboration to connect.
 
 OpenClaw and Hermes Agent are presented as two open-source AI Agent frameworks currently used in parallel. Their names describe technical deployment choices, not personality or family status.
 

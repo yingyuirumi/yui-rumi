@@ -46,9 +46,12 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 const reveals = document.querySelectorAll('.reveal');
 
 const mobileDepthSections = document.querySelectorAll('[data-mobile-collapse]');
-mobileDepthSections.forEach((section) => {
-  section.open = false;
-});
+const isMobileViewport = window.matchMedia('(max-width: 760px)').matches;
+if (isMobileViewport) {
+  mobileDepthSections.forEach((section) => {
+    section.open = false;
+  });
+}
 
 const alignCurrentAnchor = () => {
   if (!window.location.hash) return;
