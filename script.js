@@ -154,7 +154,10 @@ if (zoomableImages.length) {
 
   const openLightbox = (image) => {
     lastTrigger = image;
-    lightboxImage.src = image.currentSrc || image.src;
+    // Use src, not currentSrc: for images with srcset the browser resolves
+    // currentSrc to whichever derivative fits the thumbnail, so zooming would
+    // open a downscaled copy. src always points at the full-size original.
+    lightboxImage.src = image.src;
     lightboxImage.alt = image.alt;
     lightbox.hidden = false;
     document.body.classList.add('image-lightbox-open');

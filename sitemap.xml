@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home, four languages -->
+  <url>
+    <loc>https://yui-rui.yingternet.com/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/zh-cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Field Notes, four languages -->
+  <url>
+    <loc>https://yui-rui.yingternet.com/field-notes.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes-en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/field-notes-ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/field-notes-zh-cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes-en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/field-notes-ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/field-notes-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes-en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/field-notes-ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/field-notes-ja.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes-en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/field-notes-ja.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/field-notes.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Social link hub and legal pages -->
+  <url>
+    <loc>https://yui-rui.yingternet.com/links.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yui-rui.yingternet.com/tos.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
