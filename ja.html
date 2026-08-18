@@ -23,7 +23,7 @@
   <link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
 
   <link rel="icon" href="images/ai-family-profile-2026.png" />
-  <link rel="stylesheet" href="styles.css?v=20260814-1" />
+  <link rel="stylesheet" href="styles.css?v=20260815-2" />
   <script src="script.js?v=20260815-1" defer></script>
 </head>
 <body>
@@ -336,10 +336,28 @@
         <div class="section-heading reveal">
           <p class="eyebrow">WHAT WE BUILD &amp; OPERATE</p>
           <h2><span class="rw-h2-line">紹介</span>だけではない。<br /><span><span class="rw-h2-line">これは実際に</span><wbr /><span class="rw-h2-line">彼らが</span><wbr /><span class="rw-h2-line">構築し</span><wbr /><span class="rw-h2-line">運用している</span><wbr /><span class="rw-h2-line">システム。</span></span></h2>
-          <p class="section-intro">健康の伴走、インフラの信頼性、そして文書・コード・ナレッジワークにまたがる、現在稼働中の4つの実例。</p>
+          <p class="section-intro">インフラの信頼性、健康の伴走、そして文書・コード・ナレッジワークにまたがる、現在稼働中の4つの実例。</p>
         </div>
 
         <div class="case-grid">
+          <article class="case-card accent-blue reveal">
+            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
+            <h3>インフラの状態把握から、実際に検証された復旧能力へ。</h3>
+            <p class="case-card-summary">Ruiya（睿雅）がサーバー、サービス、バックアップ、復旧状況を見守ります。Proxmox クラスタやストレージシステムから遠隔地バックアップまで、異常は検知されるだけでなく、修復と復旧には検証可能な evidence が残ります。</p>
+            <div class="case-card-visual">
+              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="サービス稼働状況、Cron Jobs、Agent runtimes、バックアップ状態を表示するRui Dashboard。内部識別情報は非表示" />
+            </div>
+            <details class="mobile-depth" data-mobile-collapse open>
+              <summary><span>さらなる復旧記録</span><small>リアルタイムの健康報告</small></summary>
+              <div class="mobile-depth-body">
+                <figure class="work-example">
+                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Ruiyaが送信したserver recovery、Ceph recovery、2時間ごとのsystem health report。IPと内部識別情報は非表示" />
+                  <figcaption><span>REAL-TIME RECOVERY</span><strong>Alert、復旧、health report</strong></figcaption>
+                </figure>
+              </div>
+            </details>
+          </article>
+
           <article class="case-card accent-cyan reveal">
             <p class="case-card-kicker">YING HEALTH · PERSONAL HEALTH DASHBOARD</p>
             <h3>毎日の健康記録を、読み取れる長期トレンドに変える。</h3>
@@ -374,24 +392,6 @@
                   <li>データはYing自身が保持・管理する</li>
                 </ul>
                 <p class="case-card-note">上図はあくまで示意用です。項目やレイアウトは実際のシステム設計に対応していますが、数値・日付・トレンドはすべて架空のデモデータであり、Yingの実際の健康記録ではありません。</p>
-              </div>
-            </details>
-          </article>
-
-          <article class="case-card accent-blue reveal">
-            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
-            <h3>インフラの状態把握から、実際に検証された復旧能力へ。</h3>
-            <p class="case-card-summary">Ruiya（睿雅）がサーバー、サービス、バックアップ、復旧状況を見守ります。Proxmox クラスタやストレージシステムから遠隔地バックアップまで、異常は検知されるだけでなく、修復と復旧には検証可能な evidence が残ります。</p>
-            <div class="case-card-visual">
-              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="サービス稼働状況、Cron Jobs、Agent runtimes、バックアップ状態を表示するRui Dashboard。内部識別情報は非表示" />
-            </div>
-            <details class="mobile-depth" data-mobile-collapse open>
-              <summary><span>さらなる復旧 evidence</span><small>リアルタイムの健康報告</small></summary>
-              <div class="mobile-depth-body">
-                <figure class="work-example">
-                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Ruiyaが送信したserver recovery、Ceph recovery、2時間ごとのsystem health report。IPと内部識別情報は非表示" />
-                  <figcaption><span>REAL-TIME RECOVERY</span><strong>Alert、復旧、health report</strong></figcaption>
-                </figure>
               </div>
             </details>
           </article>
@@ -509,7 +509,7 @@
         <article class="resilience-card reveal">
           <span class="resilience-tag">SECURITY OPERATIONS</span>
           <h3>Securityは一度の設定ではなく、継続する運用。</h3>
-          <p>Identity、permissions、secrets、segmentation、asset／vulnerability management、logging、incident response、recovery drillsまで。Agentsはpatch validation、staged rollout、evidenceを支援し、高リスクな変更には今も承認が必要です。</p>
+          <p>Identity、permissions、secrets、segmentation、asset／vulnerability management、logging、incident response、recovery drillsまで。Agentsはpatch validation、staged rollout、監査証跡を支援し、高リスクな変更には今も承認が必要です。</p>
         </article>
       </div>
         </div>
@@ -550,7 +550,7 @@
       <p class="life-cluster-label reveal">WORKING TOGETHER</p>
       <div class="life-grid">
         <article class="life-card work-card reveal"><span>01</span><h3>プレゼンテーションと文書</h3><p>Executive deck、storyline、文書分析、多言語コンテンツまで。Agentsは複雑な情報を、意思決定とコミュニケーションに使える形へ整えます。</p></article>
-        <article class="life-card work-card reveal"><span>02</span><h3>Codeとシステム</h3><p>共にcodeを書き、automationを構築し、ツールを統合し、platformを運用します。問題が起きた時は、追跡可能な修復evidenceも残します。</p></article>
+        <article class="life-card work-card reveal"><span>02</span><h3>Codeとシステム</h3><p>共にcodeを書き、automationを構築し、ツールを統合し、platformを運用します。問題が起きた時は、追跡可能な修復記録も残します。</p></article>
         <article class="life-card work-card reveal"><span>03</span><h3>Researchと第二の視点</h3><p>市場、財務、AI、テクノロジーのresearchは答えを出すだけではありません。Reviewerとcommentatorが前提、リスク、不足するevidenceを見つけます。</p></article>
         <article class="life-card work-card reveal"><span>04</span><h3>Operationsと復元</h3><p>Workspace、infrastructure reliabilityからbreak-glass repairまで。各役割には明確な境界、権限、報告方法があります。</p></article>
       </div>
@@ -645,7 +645,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="tos.html">Terms</a>
     </nav>
-    <small>© <span id="year">2026</span> Yingternet AI Family</small>
+    <small>© <span id="year">2026</span> Yingternet AI Family · Last updated <time datetime="2026-08-15">2026-08-15</time></small>
   </footer>
 </body>
 </html>

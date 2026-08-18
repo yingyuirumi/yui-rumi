@@ -23,7 +23,7 @@
   <link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
 
   <link rel="icon" href="images/ai-family-profile-2026.png" />
-  <link rel="stylesheet" href="styles.css?v=20260814-1" />
+  <link rel="stylesheet" href="styles.css?v=20260815-2" />
   <script src="script.js?v=20260815-1" defer></script>
 </head>
 <body>
@@ -336,10 +336,28 @@
         <div class="section-heading reveal">
           <p class="eyebrow">WHAT WE BUILD &amp; OPERATE</p>
           <h2><span class="rw-h2-line">不只是家族介紹。</span><br /><span class="rw-h2-line">這是他們實際建構</span><wbr /><span class="rw-h2-line">與營運的系統。</span></h2>
-          <p class="section-intro">四個目前正在運作的真實系統與交付成果，涵蓋健康陪伴、基礎設施可靠性，以及文件、程式與知識工作。</p>
+          <p class="section-intro">四個目前正在運作的真實系統與交付成果，涵蓋基礎設施可靠性、健康陪伴，以及文件、程式與知識工作。</p>
         </div>
 
         <div class="case-grid">
+          <article class="case-card accent-blue reveal">
+            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
+            <h3>從基礎設施狀態，到真正驗證過的復原能力。</h3>
+            <p class="case-card-summary">睿雅協助監看主機、服務、備份與復原狀態。從 Proxmox Cluster、儲存系統到異地備份，異常不只要被發現，修復與復原也必須留下可以驗證的 evidence。</p>
+            <div class="case-card-visual">
+              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="顯示服務在線、Cron Jobs、Agent runtimes 與備份狀態的 Rui Dashboard；內部識別資訊已遮蔽" />
+            </div>
+            <details class="mobile-depth" data-mobile-collapse open>
+              <summary><span>更多復原紀錄</span><small>即時健康回報</small></summary>
+              <div class="mobile-depth-body">
+                <figure class="work-example">
+                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Ruiya 傳送的 server recovery、Ceph recovery 與每兩小時系統健康報告；IP 與內部識別資訊已遮蔽" />
+                  <figcaption><span>REAL-TIME RECOVERY</span><strong>告警、復原與健康回報</strong></figcaption>
+                </figure>
+              </div>
+            </details>
+          </article>
+
           <article class="case-card accent-cyan reveal">
             <p class="case-card-kicker">YING HEALTH · PERSONAL HEALTH DASHBOARD</p>
             <h3>把每天的健康紀錄，整理成看得懂的長期趨勢。</h3>
@@ -374,24 +392,6 @@
                   <li>資料由 Ying 自行持有與控制</li>
                 </ul>
                 <p class="case-card-note">上方圖表為示意用途：欄位與版面對應真實系統設計，但數值、日期與趨勢皆為虛構示意資料，不代表 Ying 的實際健康紀錄。</p>
-              </div>
-            </details>
-          </article>
-
-          <article class="case-card accent-blue reveal">
-            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
-            <h3>從基礎設施狀態，到真正驗證過的復原能力。</h3>
-            <p class="case-card-summary">睿雅協助監看主機、服務、備份與復原狀態。從 Proxmox Cluster、儲存系統到異地備份，異常不只要被發現，修復與復原也必須留下可以驗證的 evidence。</p>
-            <div class="case-card-visual">
-              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="顯示服務在線、Cron Jobs、Agent runtimes 與備份狀態的 Rui Dashboard；內部識別資訊已遮蔽" />
-            </div>
-            <details class="mobile-depth" data-mobile-collapse open>
-              <summary><span>更多復原 evidence</span><small>即時健康回報</small></summary>
-              <div class="mobile-depth-body">
-                <figure class="work-example">
-                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Ruiya 傳送的 server recovery、Ceph recovery 與每兩小時系統健康報告；IP 與內部識別資訊已遮蔽" />
-                  <figcaption><span>REAL-TIME RECOVERY</span><strong>告警、復原與健康回報</strong></figcaption>
-                </figure>
               </div>
             </details>
           </article>
@@ -509,7 +509,7 @@
         <article class="resilience-card reveal">
           <span class="resilience-tag">SECURITY OPERATIONS</span>
           <h3>安全不是一次設定，是持續營運。</h3>
-          <p>從 identity、permissions、secrets、segmentation、asset／vulnerability management，到 logging、incident response 與 recovery drills。Agents 正協助 patch validation、staged rollout 與 evidence；高風險變更仍需 approval。</p>
+          <p>從 identity、permissions、secrets、segmentation、asset／vulnerability management，到 logging、incident response 與 recovery drills。Agents 正協助 patch validation、staged rollout 與佐證留存；高風險變更仍需 approval。</p>
         </article>
       </div>
         </div>
@@ -550,7 +550,7 @@
       <p class="life-cluster-label reveal">WORKING TOGETHER</p>
       <div class="life-grid">
         <article class="life-card work-card reveal"><span>01</span><h3>簡報與文件</h3><p>從 executive deck、storyline、文件分析到雙語內容，Agents 協助把複雜資訊整理成可以決策與溝通的形式。</p></article>
-        <article class="life-card work-card reveal"><span>02</span><h3>Code 與系統</h3><p>一起寫 code、建立 automation、整合工具、維護 platform，也在出問題時留下可追溯的修復 evidence。</p></article>
+        <article class="life-card work-card reveal"><span>02</span><h3>Code 與系統</h3><p>一起寫 code、建立 automation、整合工具、維護 platform，也在出問題時留下可追溯的修復紀錄。</p></article>
         <article class="life-card work-card reveal"><span>03</span><h3>Research 與第二觀點</h3><p>市場、財務、AI 與技術研究不只產生答案，也透過 reviewer 與 commentator 找出假設、風險與遺漏。</p></article>
         <article class="life-card work-card reveal"><span>04</span><h3>Operations 與復原</h3><p>從 Workspace、infra reliability 到 break-glass repair，每個角色都有清楚邊界、權限與回報方式。</p></article>
       </div>
@@ -645,7 +645,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="tos.html">Terms</a>
     </nav>
-    <small>© <span id="year">2026</span> Yingternet AI Family</small>
+    <small>© <span id="year">2026</span> Yingternet AI Family · Last updated <time datetime="2026-08-15">2026-08-15</time></small>
   </footer>
 </body>
 </html>

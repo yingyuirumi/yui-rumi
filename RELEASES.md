@@ -24,11 +24,13 @@ The tag message should include:
 1. Confirm the worktree and preserve unrelated or untracked user files.
 2. Review the complete diff, especially `CNAME`, `privacy.html`, `tos.html`, public images and social links.
 3. Verify Traditional Chinese, Simplified Chinese, English and Japanese home pages and Field Notes remain synchronized; then check mobile navigation, image zoom, links hub and contact address.
-4. Commit the reviewed website source on `main`.
-5. Create an annotated `site-vYYYY.MM.DD.N` tag on that commit.
-6. Push `main` and the exact release tag without force.
-7. Wait for GitHub Pages to publish from `main` at the repository root.
-8. Smoke-test the live site and record the successful tag as the current production version.
+4. Update the footer `Last updated` date, including its `<time datetime="...">` attribute, on every page that carries the shared footer. A stale date is worse than none, so this is not optional.
+5. If `styles.css` or `script.js` changed, bump their `?v=` cache-buster on every page that loads them. Otherwise returning visitors keep the cached old asset.
+6. Commit the reviewed website source on `main`.
+7. Create an annotated `site-vYYYY.MM.DD.N` tag on that commit.
+8. Push `main` and the exact release tag without force.
+9. Wait for GitHub Pages to publish from `main` at the repository root.
+10. Smoke-test the live site and record the successful tag as the current production version.
 
 ## Rollback
 

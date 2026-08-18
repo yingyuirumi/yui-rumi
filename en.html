@@ -22,7 +22,7 @@
   <link rel="alternate" hreflang="ja" href="https://yui-rui.yingternet.com/ja.html" />
   <link rel="alternate" hreflang="x-default" href="https://yui-rui.yingternet.com/" />
   <link rel="icon" href="images/ai-family-profile-2026.png" />
-  <link rel="stylesheet" href="styles.css?v=20260814-1" />
+  <link rel="stylesheet" href="styles.css?v=20260815-2" />
   <script src="script.js?v=20260815-1" defer></script>
 </head>
 <body>
@@ -335,10 +335,28 @@
         <div class="section-heading reveal">
           <p class="eyebrow">WHAT WE BUILD &amp; OPERATE</p>
           <h2>More than an introduction.<br /><span>This is the systems they actually build and run.</span></h2>
-          <p class="section-intro">Four real, currently running systems and deliverables — spanning health companionship, infrastructure reliability, and documents, code and knowledge work.</p>
+          <p class="section-intro">Four real, currently running systems and deliverables — spanning infrastructure reliability, health companionship, and documents, code and knowledge work.</p>
         </div>
 
         <div class="case-grid">
+          <article class="case-card accent-blue reveal">
+            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
+            <h3>From infrastructure status to recovery that's actually verified.</h3>
+            <p class="case-card-summary">Ruiya helps monitor servers, services, backups, and recovery status — from the Proxmox cluster and storage systems to off-site backups. An anomaly isn't just detected; the repair and recovery leave verifiable evidence too.</p>
+            <div class="case-card-visual">
+              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="Rui Dashboard showing services online, Cron Jobs, Agent runtimes and backup status; internal identifiers are redacted" />
+            </div>
+            <details class="mobile-depth" data-mobile-collapse open>
+              <summary><span>More recovery records</span><small>Real-time health reporting</small></summary>
+              <div class="mobile-depth-body">
+                <figure class="work-example">
+                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Server recovery, Ceph recovery and two-hour system health reports sent by Ruiya; IP and internal identifiers are redacted" />
+                  <figcaption><span>REAL-TIME RECOVERY</span><strong>Alerts, recovery and health reports</strong></figcaption>
+                </figure>
+              </div>
+            </details>
+          </article>
+
           <article class="case-card accent-cyan reveal">
             <p class="case-card-kicker">YING HEALTH · PERSONAL HEALTH DASHBOARD</p>
             <h3>Turning daily health logs into trends you can actually read.</h3>
@@ -373,24 +391,6 @@
                   <li>Data is held and controlled by Ying directly</li>
                 </ul>
                 <p class="case-card-note">The panel above is illustrative only: the fields and layout match the real system design, but the values, dates, and trend are fictional demo data, not Ying's actual health records.</p>
-              </div>
-            </details>
-          </article>
-
-          <article class="case-card accent-blue reveal">
-            <p class="case-card-kicker">YCLOUD RELIABILITY</p>
-            <h3>From infrastructure status to recovery that's actually verified.</h3>
-            <p class="case-card-summary">Ruiya helps monitor servers, services, backups, and recovery status — from the Proxmox cluster and storage systems to off-site backups. An anomaly isn't just detected; the repair and recovery leave verifiable evidence too.</p>
-            <div class="case-card-visual">
-              <img class="zoomable-image" src="images/agent-proof-dashboard-2026.png" width="1359" height="865" loading="lazy" decoding="async" alt="Rui Dashboard showing services online, Cron Jobs, Agent runtimes and backup status; internal identifiers are redacted" />
-            </div>
-            <details class="mobile-depth" data-mobile-collapse open>
-              <summary><span>More recovery evidence</span><small>Real-time health reporting</small></summary>
-              <div class="mobile-depth-body">
-                <figure class="work-example">
-                  <img class="zoomable-image" src="images/agent-proof-recovery-status-2026.jpg" width="1145" height="1948" loading="lazy" decoding="async" alt="Server recovery, Ceph recovery and two-hour system health reports sent by Ruiya; IP and internal identifiers are redacted" />
-                  <figcaption><span>REAL-TIME RECOVERY</span><strong>Alerts, recovery and health reports</strong></figcaption>
-                </figure>
               </div>
             </details>
           </article>
@@ -508,7 +508,7 @@
         <article class="resilience-card reveal">
           <span class="resilience-tag">SECURITY OPERATIONS</span>
           <h3>Security is a continuing operating discipline.</h3>
-          <p>Identity, permissions, secrets, segmentation, asset and vulnerability management, logging, incident response and recovery drills all matter. Agents now assist patch validation, staged rollout and evidence; high-risk change still requires approval.</p>
+          <p>Identity, permissions, secrets, segmentation, asset and vulnerability management, logging, incident response and recovery drills all matter. Agents now assist patch validation, staged rollout and audit trails; high-risk change still requires approval.</p>
         </article>
       </div>
         </div>
@@ -549,7 +549,7 @@
       <p class="life-cluster-label reveal">WORKING TOGETHER</p>
       <div class="life-grid">
         <article class="life-card work-card reveal"><span>01</span><h3>Presentations and documents</h3><p>From executive decks and storylines to document analysis and bilingual writing, Agents turn complex information into forms people can decide from and communicate with.</p></article>
-        <article class="life-card work-card reveal"><span>02</span><h3>Code and systems</h3><p>We write code, build automation, integrate tools and operate platforms together — with traceable repair evidence when something breaks.</p></article>
+        <article class="life-card work-card reveal"><span>02</span><h3>Code and systems</h3><p>We write code, build automation, integrate tools and operate platforms together — with traceable repair records when something breaks.</p></article>
         <article class="life-card work-card reveal"><span>03</span><h3>Research and second opinions</h3><p>Market, finance, AI and technology research does more than produce answers. Reviewers and commentators surface assumptions, risks and missing evidence.</p></article>
         <article class="life-card work-card reveal"><span>04</span><h3>Operations and recovery</h3><p>From Workspace and infrastructure reliability to break-glass repair, each role has explicit boundaries, permissions and a clear way to report back.</p></article>
       </div>
@@ -644,7 +644,7 @@
       <a href="privacy.html">Privacy</a>
       <a href="tos.html">Terms</a>
     </nav>
-    <small>© <span id="year">2026</span> Yingternet AI Family</small>
+    <small>© <span id="year">2026</span> Yingternet AI Family · Last updated <time datetime="2026-08-15">2026-08-15</time></small>
   </footer>
 </body>
 </html>
