@@ -114,7 +114,9 @@ const year = document.querySelector('#year');
 if (year) year.textContent = String(new Date().getFullYear());
 
 const zoomableImages = Array.from(document.querySelectorAll('main img'))
-  .filter((image) => !image.closest('.ying-visual') && !image.classList.contains('platform-icon'));
+  .filter((image) => !image.closest('.ying-visual')
+    && !image.classList.contains('platform-icon')
+    && !image.hasAttribute('data-no-lightbox'));
 
 if (zoomableImages.length) {
   const pageLanguage = document.documentElement.lang;

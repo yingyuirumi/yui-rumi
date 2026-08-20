@@ -379,12 +379,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .field-note-body p { color: var(--muted); font-size: 16px; }
 .field-note-body blockquote { margin: 34px 0; padding: 22px 26px; border-left: 3px solid var(--cyan); color: #fff; background: rgba(110,231,242,.045); font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; }
 .field-note-body .physical-world-note { margin-top: 42px; color: var(--text); font-weight: 700; }
-.field-note-hero { overflow: hidden; max-width: 640px; margin: 34px auto; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); }
-.field-note-hero img { display: block; width: 100%; height: 320px; object-fit: cover; }
+.field-note-hero { overflow: hidden; max-width: 480px; margin: 34px auto; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); }
+.field-note-hero img { display: block; width: 100%; height: auto; }
 .field-note-hero figcaption, .field-note-photo-grid figcaption { padding: 11px 14px; color: var(--dim); font-size: 10px; line-height: 1.5; }
-.field-note-photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 34px 0; }
+.field-note-photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 640px; margin: 34px auto; }
 .field-note-photo-grid figure { overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
-.field-note-photo-grid img { display: block; width: 100%; height: 220px; object-fit: cover; }
+.field-note-photo-grid img { display: block; width: 100%; height: auto; }
 .field-note-source-link { display: inline-flex; align-items: center; margin-top: 18px; color: var(--cyan); font-size: 12px; font-weight: 800; letter-spacing: .03em; text-decoration: none; }
 .field-note-source-link:hover { color: #fff; }
 .notes-colophon { max-width: 760px; margin: 56px auto 0; padding-top: 24px; border-top: 1px solid var(--line); }
@@ -632,9 +632,7 @@ body.image-lightbox-open { overflow: hidden; }
   .notes-archive-intro { margin-bottom: 42px; }
   .field-note-article { padding: 24px; border-radius: 22px; }
   .field-note-body p { font-size: 15px; }
-  .field-note-hero img { height: 180px; }
   .field-note-photo-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .field-note-photo-grid img { height: 125px; }
   .field-note-photo-grid figcaption { padding: 9px 10px; font-size: 9px; }
   .link-hub-actions { justify-content: center; width: 100%; margin-left: 0; }
   .link-hub-home { padding: 8px 12px; }
