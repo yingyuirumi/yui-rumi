@@ -375,6 +375,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .field-note-body { max-width: 760px; }
 .field-note-body h2 { margin: 0 0 28px; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1; letter-spacing: -.055em; }
 .field-note-body .note-deck { margin: 0 0 36px; color: #fff; font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; line-height: 1.5; }
+.field-note-details { margin-top: 4px; }
+.field-note-details > summary { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 9px 12px; border: 1px solid rgba(110,231,242,.28); border-radius: 8px; color: var(--cyan); background: rgba(110,231,242,.045); cursor: pointer; font-size: 10px; font-weight: 800; letter-spacing: .04em; list-style: none; }
+.field-note-details > summary::-webkit-details-marker { display: none; }
+.field-note-details > summary::before { content: '+'; width: 14px; color: #fff; font-size: 16px; line-height: 1; text-align: center; }
+.field-note-details[open] > summary::before { content: '\2212'; }
+.field-note-details > summary:hover { color: #fff; border-color: var(--line-bright); }
+.field-note-details > summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.field-note-details .details-collapse { display: none; }
+.field-note-details[open] .details-expand { display: none; }
+.field-note-details[open] .details-collapse { display: inline; }
+.field-note-details-content { padding-top: 1px; }
 .field-note-body h3 { margin: 40px 0 10px; color: var(--violet-bright); font-size: 21px; }
 .field-note-body p { color: var(--muted); font-size: 16px; }
 .field-note-body blockquote { margin: 34px 0; padding: 22px 26px; border-left: 3px solid var(--cyan); color: #fff; background: rgba(110,231,242,.045); font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; }
