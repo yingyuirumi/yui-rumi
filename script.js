@@ -121,15 +121,16 @@ const zoomableImages = Array.from(document.querySelectorAll('main img'))
 if (zoomableImages.length) {
   const pageLanguage = document.documentElement.lang;
   const lightboxCopy = pageLanguage.startsWith('en')
-    ? { open: 'open full-size image', label: 'Full-size image', close: 'Close full-size image' }
+    ? { open: 'open full-size image', label: 'Full-size image', close: 'Close full-size image', original: 'Open original file' }
     : pageLanguage.startsWith('ja')
-      ? { open: '押して原寸画像を表示', label: '原寸画像', close: '原寸画像を閉じる' }
+      ? { open: '押して原寸画像を表示', label: '原寸画像', close: '原寸画像を閉じる', original: '元ファイルを開く' }
       : pageLanguage === 'zh-Hans'
-        ? { open: '单击查看原图', label: '原图查看', close: '关闭原图' }
-        : { open: '按一下查看原圖', label: '原圖檢視', close: '關閉原圖' };
+        ? { open: '单击查看原图', label: '原图查看', close: '关闭原图', original: '打开原始文件' }
+        : { open: '按一下查看原圖', label: '原圖檢視', close: '關閉原圖', original: '開啟原始檔' };
   const lightbox = document.createElement('div');
   const lightboxImage = document.createElement('img');
   const closeButton = document.createElement('button');
+  const originalLink = document.createElement('a');
   let lastTrigger = null;
 
   lightbox.className = 'image-lightbox';
@@ -143,8 +144,28 @@ if (zoomableImages.length) {
   closeButton.setAttribute('aria-label', lightboxCopy.close);
   closeButton.textContent = '×';
 
+  // The lightbox still constrains the image to min(92vw, 1600px) by 88vh, so on
+  // a phone -- or for anything taller than the viewport -- what it shows is not
+  // the real thing. This link is the way out to the actual file, and it carries
+  // the pixel size so the reader can tell whether following it is worth it.
+  originalLink.className = 'image-lightbox-original';
+  originalLink.target = '_blank';
+  originalLink.rel = 'noopener';
+
+  const showOriginalSize = () => {
+    const width = lightboxImage.naturalWidth;
+    const height = lightboxImage.naturalHeight;
+    originalLink.textContent = width && height
+      ? `${lightboxCopy.original} · ${width} × ${height}`
+      : lightboxCopy.original;
+  };
+  // naturalWidth is 0 until the image decodes, so the size is filled in on load;
+  // a cached image is already complete when the lightbox opens and will not fire
+  // load again, which is why openLightbox calls this directly as well.
+  lightboxImage.addEventListener('load', showOriginalSize);
+
   lightboxImage.alt = '';
-  lightbox.append(lightboxImage, closeButton);
+  lightbox.append(lightboxImage, closeButton, originalLink);
   document.body.append(lightbox);
 
   const closeLightbox = () => {
@@ -161,6 +182,8 @@ if (zoomableImages.length) {
     // open a downscaled copy. src always points at the full-size original.
     lightboxImage.src = image.src;
     lightboxImage.alt = image.alt;
+    originalLink.href = image.src;
+    showOriginalSize();
     lightbox.hidden = false;
     document.body.classList.add('image-lightbox-open');
     closeButton.focus();
@@ -189,6 +212,22 @@ if (zoomableImages.length) {
     if (event.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    if (lightbox.hidden) return;
+    if (event.key === 'Escape') {
+      closeLightbox();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    // The dialog claims aria-modal="true". With only a close button that promise
+    // was cheap; now that there is a second control, keep it honestly -- without
+    // this, Tab walks out of the overlay into the page behind it, which is still
+    // rendered and scrollable underneath.
+    const order = [closeButton, originalLink];
+    const current = order.indexOf(document.activeElement);
+    event.preventDefault();
+    const next = event.shiftKey
+      ? order[(current <= 0 ? order.length : current) - 1]
+      : order[(current + 1) % order.length];
+    next.focus();
   });
 }

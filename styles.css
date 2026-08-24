@@ -471,9 +471,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .zoomable-image { cursor: zoom-in; }
 .image-lightbox[hidden] { display: none; }
 .image-lightbox { position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; padding: 40px; background: rgba(5,4,10,.93); backdrop-filter: blur(14px); cursor: zoom-out; }
-.image-lightbox img { width: auto; height: auto; max-width: min(92vw, 1600px); max-height: 88vh; object-fit: contain; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; box-shadow: 0 30px 100px rgba(0,0,0,.65); cursor: default; }
+/* The image is centred, so its clearance top and bottom is (100vh - height)/2.
+   The close button needs 64px at the top and the original-file link 66px at the
+   bottom, so cap the height such that each gap stays at least 80px -- otherwise
+   a centred landscape image sits underneath the link. */
+.image-lightbox img { width: auto; height: auto; max-width: min(92vw, 1600px); max-height: min(88vh, calc(100vh - 160px)); object-fit: contain; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; box-shadow: 0 30px 100px rgba(0,0,0,.65); cursor: default; }
 .image-lightbox-close { position: fixed; top: 20px; right: 24px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; color: #fff; background: rgba(15,11,27,.88); font: 300 32px/1 sans-serif; cursor: pointer; }
 .image-lightbox-close:hover { background: rgba(169,135,255,.32); }
+.image-lightbox-original { position: fixed; bottom: 22px; left: 50%; display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; transform: translateX(-50%); border: 1px solid rgba(255,255,255,.22); border-radius: 22px; color: #fff; background: rgba(15,11,27,.88); font: 700 12px/1 Inter, ui-sans-serif, sans-serif; letter-spacing: .04em; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.image-lightbox-original:hover { background: rgba(169,135,255,.32); }
 body.image-lightbox-open { overflow: hidden; }
 
 .site-footer { display: grid; justify-items: center; gap: 12px; padding: 58px 22px; border-top: 1px solid rgba(255,255,255,.06); text-align: center; }
@@ -645,8 +651,9 @@ body.image-lightbox-open { overflow: hidden; }
   .mobile-depth .stack-wrap, .mobile-depth .resilience-grid { margin-top: 0; }
   .mobile-depth .life-cluster-label:first-child { margin-top: 0; }
   .image-lightbox { padding: 18px; }
-  .image-lightbox img { max-width: 96vw; max-height: 84vh; border-radius: 14px; }
+  .image-lightbox img { max-width: 96vw; max-height: min(84vh, calc(100vh - 144px)); border-radius: 14px; }
   .image-lightbox-close { top: 12px; right: 12px; }
+  .image-lightbox-original { bottom: 14px; padding: 0 15px; font-size: 11px; }
   .link-hub-header { display: grid; grid-template-columns: 1fr; justify-items: center; gap: 10px; width: min(100% - 24px, var(--max)); padding-block: 16px; }
   .notes-page-header { display: grid; justify-items: center; width: min(100% - 24px, var(--max)); }
   .notes-page-actions { justify-content: center; }
