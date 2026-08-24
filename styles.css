@@ -204,7 +204,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
    .member-card > p restates margin and font-size -- media queries add no
    specificity, so those would otherwise reach this element too. It must stay
    AFTER the two rules above. Verified by computed style, not by reading. */
-.member-card > p.member-relation { display: block; margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.member-card > p.member-relation { display: block; margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; line-break: strict; }
 .member-role { margin-top: auto; color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .member-toggle { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 36px; margin-top: 14px; padding: 8px 12px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); border-radius: 10px; color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); font: 800 10px/1 Inter, sans-serif; cursor: pointer; }
 .member-toggle:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
