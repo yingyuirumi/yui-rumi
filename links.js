@@ -152,9 +152,9 @@
   };
 
   const homeByLanguage = {
-    "zh-Hant": "index.html",
+    "zh-Hant": "zh-hant.html",
     "zh-Hans": "zh-cn.html",
-    en: "en.html",
+    en: "index.html",
     ja: "ja.html"
   };
 

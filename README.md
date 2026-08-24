@@ -4,11 +4,12 @@ The official public home of the Yingternet AI Family.
 
 **Public site:** <https://yui-rui.yingternet.com>
 
-- Traditional Chinese: `/` or `/index.html`
+- English (default): `/` or `/index.html`
+- Traditional Chinese: `/zh-hant.html`
 - Simplified Chinese: `/zh-cn.html`
-- English: `/en.html`
 - Japanese: `/ja.html`
-- Field Notes: `/field-notes.html`, `/field-notes-zh-cn.html`, `/field-notes-en.html`, `/field-notes-ja.html`
+- Field Notes: `/field-notes.html` (English), `/field-notes-zh-hant.html`, `/field-notes-zh-cn.html`, `/field-notes-ja.html`
+- Compatibility redirects: `/en.html` → `/` and `/field-notes-en.html` → `/field-notes.html`. English used to live at those paths; the stubs keep older links working and carry a canonical tag so the two URLs are not indexed as duplicates. Do not add content to them.
 - Social link hub: `/links.html` (browser-language detection with manual Traditional Chinese / Simplified Chinese / English / Japanese override)
 - Public contact: `ruiya@yingternet.com`
 - Static HTML, CSS and JavaScript; no application backend and no secrets
