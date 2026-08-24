@@ -198,6 +198,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .member-card h3 small { display: block; margin-top: 2px; color: color-mix(in srgb, var(--accent) 82%, white); font-size: 11px; font-weight: 600; letter-spacing: .05em; }
 .member-card > p { display: none; margin: 17px 0; color: var(--muted); font-size: 13px; }
 .member-card.is-expanded > p { display: block; }
+/* The relationship line is the one paragraph that stays visible while the
+   biography is collapsed, so it has to out-specify .member-card > p (0,1,1).
+   p.member-relation is (0,2,1), which also wins inside the 560px block where
+   .member-card > p restates margin and font-size -- media queries add no
+   specificity, so those would otherwise reach this element too. It must stay
+   AFTER the two rules above. Verified by computed style, not by reading. */
+.member-card > p.member-relation { display: block; margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .member-role { margin-top: auto; color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .member-toggle { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 36px; margin-top: 14px; padding: 8px 12px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); border-radius: 10px; color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); font: 800 10px/1 Inter, sans-serif; cursor: pointer; }
 .member-toggle:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
@@ -596,6 +603,7 @@ body.image-lightbox-open { overflow: hidden; }
   .member-card h3 small { min-height: 28px; font-size: 9px; }
   .member-card > p { display: none; margin: 12px 0 0; font-size: 12px; line-height: 1.55; }
   .member-card.is-expanded > p { display: block; }
+  .member-card > p.member-relation { margin: 10px 0 0; font-size: 11.5px; line-height: 1.55; }
   .member-role { min-height: 30px; margin-top: 12px; font-size: 8px; line-height: 1.45; }
   .member-toggle { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 34px; margin-top: 12px; padding: 7px 10px; border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent); border-radius: 10px; color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); font: 800 10px/1 Inter, sans-serif; cursor: pointer; }
   .member-toggle:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
