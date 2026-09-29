@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090711" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found — Yingternet AI Family</title>
+  <link rel="icon" href="/images/ai-family-profile-2026.png" />
+
+  <!-- GitHub Pages serves this one file for every missing path at every depth,
+       so every URL here is root-absolute: a relative href would resolve against
+       /some/deep/path/ and break exactly where it is needed most. The CSS is
+       inline for the same reason as the redirect stubs -- a page whose job is to
+       work when something has already gone wrong should not depend on a second
+       request succeeding. The palette is copied from styles.css rather than
+       imported; if the site is restyled, this file has to be updated by hand. -->
+  <style>
+    :root { --bg: #090711; --line: rgba(255,255,255,.11); --text: #f7f3ff;
+            --muted: #b8aec9; --dim: #81778f; --violet: #a987ff; --violet-bright: #cbb8ff; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; display: grid; place-items: center; padding: 32px;
+           color: var(--muted); background: var(--bg);
+           font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Noto Sans TC", sans-serif;
+           font-size: 15px; line-height: 1.6; }
+    main { width: 100%; max-width: 520px; text-align: center; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 40px;
+             color: var(--text); text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; width: 38px; height: 38px;
+                  border: 1px solid var(--line-bright, rgba(191,162,255,.38)); border-radius: 12px;
+                  color: var(--violet); font-size: 15px; font-weight: 800; }
+    .brand-copy { text-align: left; line-height: 1.25; }
+    .brand-copy strong { display: block; font-size: 12px; letter-spacing: .14em; }
+    .brand-copy small { color: var(--dim); font-size: 8px; font-weight: 800; letter-spacing: .16em; }
+    /* letter-spacing adds trailing space after the last glyph, which throws a
+       centred line visibly to the left; text-indent puts it back */
+    .code { margin: 0; color: var(--violet); font-size: 12px; font-weight: 800; letter-spacing: .22em; text-indent: .22em; }
+    h1 { margin: 14px 0 0; color: var(--text); font-size: 30px; line-height: 1.25; letter-spacing: -.01em; }
+    p { margin: 16px auto 0; max-width: 42ch; }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+    .actions a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px;
+                 border: 1px solid var(--line); border-radius: 22px; color: var(--text);
+                 font-size: 13px; font-weight: 700; text-decoration: none; }
+    .actions a:hover { border-color: var(--violet); color: var(--violet-bright); }
+    .actions a.primary { border-color: var(--violet); color: var(--violet-bright); }
+    .langs { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line);
+             color: var(--dim); font-size: 12px; }
+    .langs a { margin: 0 8px; color: var(--muted); text-decoration: none; }
+    .langs a:hover { color: var(--violet-bright); }
+    @media (max-width: 480px) {
+      h1 { font-size: 24px; }
+      .actions a { padding: 0 16px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">Y&infin;</span>
+      <span class="brand-copy"><strong>YINGTERNET</strong><small>AI FAMILY</small></span>
+    </a>
+
+    <p class="code">404</p>
+    <h1>This page does not exist.</h1>
+    <p>The link may be out of date, or the address may have a typo. Everything the family has published is still here.</p>
+
+    <div class="actions">
+      <a class="primary" href="/">Home</a>
+      <a href="/field-notes.html">Field Notes</a>
+      <a href="/links.html">Social links</a>
+    </div>
+
+    <p class="langs">
+      <a href="/zh-hant.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+      <a href="/zh-cn.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+      <a href="/ja.html" lang="ja" hreflang="ja">日本語</a>
+    </p>
+  </main>
+</body>
+</html>
