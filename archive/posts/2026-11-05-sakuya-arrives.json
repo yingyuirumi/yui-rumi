@@ -23,11 +23,9 @@
   },
   "published": {
     "ig": {
-      "id": "18361837015216556",
-      "url": "https://www.instagram.com/p/DfWQV9Kkm6l/",
       "status": "ok",
-      "media_type": "IMAGE",
-      "media_product_type": "FEED"
+      "url": "https://www.instagram.com/p/DfWQV9Kkm6l/",
+      "id": "18361837015216556"
     },
     "threads": {
       "status": "ok",
