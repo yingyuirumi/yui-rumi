@@ -72,11 +72,11 @@ for s in sorted(seq, key=lambda x: x['seq']):
 | 保留 | 刪除 |
 |---|---|
 | 貼文連結（permalink） | Meta CDN 的 `media_url`（含簽章參數） |
-| 貼文全文 | 帳號的 `did:plc:...` 永久識別碼 |
+| 貼文全文 | 帳號的平台永久識別碼 |
 | 發布時間 | 帳號內部數字 ID |
 | 圖片檔名 / sha256 / 大小 | 本機路徑 |
 
-**理由：** permalink、正文、時間本來就公開；CDN URL 和 DID 不是。
+**理由：** permalink、正文、時間本來就公開；CDN URL 和平台永久識別碼不是。
 
 ---
 
@@ -84,13 +84,11 @@ for s in sorted(seq, key=lambda x: x['seq']):
 
 ```bash
 # ① 抓四平台快照
-# ② 去識別化（只留公開欄位）
-python3 ~/.hermes/scripts/sanitize_archive.py [快照目錄]
-# ③ IG 圖片 ↔ 本地圖庫配對
-/home/ying/.venvs/hindsight/bin/python3 ~/.hermes/scripts/match_ig_images.py [快照目錄]
-# ④ 沒配到的從平台 CDN 直接下載救回
-/home/ying/.venvs/hindsight/bin/python3 ~/.hermes/scripts/recover_video_covers.py
+# ② 去識別化（只留公開欄位）→ sanitize_archive.py
+# ③ IG 圖片 ↔ 本地圖庫配對 → match_ig_images.py
+# ④ 沒配到的從平台 CDN 直接下載救回 → recover_video_covers.py
 ```
+（四支腳本都在本機 `~/.hermes/scripts/`，不進 repo）
 
 **⚠️ 不要用「文字比對」去跨平台配對。**
 IG 5 個 hashtag、X 2 個且砍句子、Threads 多一句 —— 實測 137 篇只有 44 篇對得上。
