@@ -33,9 +33,8 @@
       "id": "18028652414919195"
     },
     "bsky": {
-      "rkey": "3mzk4bhs5ob2t",
       "status": "ok",
-      "embed": "app.bsky.embed.images#view"
+      "rkey": "3mzk4bhs5ob2t"
     },
     "x": {
       "status": "failed",
