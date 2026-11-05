@@ -30,10 +30,9 @@
       "media_product_type": "FEED"
     },
     "threads": {
-      "id": "17961546629199195",
-      "url": "https://www.threads.com/@ying.yui.rumi/post/DfWQTsekvVn",
       "status": "ok",
-      "media_type": "IMAGE"
+      "url": "https://www.threads.com/@ying.yui.rumi/post/DfWQTsekvVn",
+      "id": "18028652414919195"
     },
     "bsky": {
       "rkey": "3mzk4bhs5ob2t",
@@ -49,5 +48,13 @@
     "X 403：對照實驗顯示加權 253 無 hashtag 可發、加權 277 含 2 hashtag 被擋。本次疑為 hashtag 觸發。",
     "誤發三篇測試貼文（test / 測試 短文字帶圖 / 無 hashtag 版），前兩篇已由哥刪除。",
     "圖為第一版（哥選定）：Sakuya 耳吊飾在左耳，此視角本來就看不到，故不做耳件修正。"
-  ]
+  ],
+  "verified": {
+    "at": "2026-11-05",
+    "ig": "id 直查成功、caption 逐字相符、media_type=IMAGE",
+    "threads": "permalink 命中、text 逐字相符、media_type=IMAGE",
+    "bsky": "rkey 命中、text 逐字相符、has image=True",
+    "x": "未發布（403），已記錄錯誤",
+    "local_files": "PNG sha256/bytes 相符、bsky webp sha256/bytes 相符"
+  }
 }
