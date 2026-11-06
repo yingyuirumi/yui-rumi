@@ -431,6 +431,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .social-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .social-links a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); font-size: 10px; font-weight: 700; text-decoration: none; }
 .social-links a:hover { color: #fff; border-color: var(--line-bright); }
+.social-link-retired { display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border: 1px dashed var(--line); border-radius: 8px; color: var(--dim); font-size: 10px; font-weight: 700; }
+.social-link-retired .platform-icon, .link-retired .platform-icon { filter: grayscale(1); opacity: .45; }
+.social-retired-note, .link-retired-note { margin: 10px 0 0; font-size: 11px; line-height: 1.5; }
+.social-retired-note a, .link-retired-note a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+.social-retired-note a:hover, .link-retired-note a:hover { color: var(--cyan); border-bottom-color: var(--cyan); }
 .platform-icon { display: block; width: 16px; height: 16px; flex: 0 0 16px; object-fit: contain; }
 .connect-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .collaboration-invite { flex: 1 1 520px; margin: 0 auto 0 0; color: #fff; font-size: 15px; font-weight: 700; }
@@ -473,6 +478,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .link-list a > .platform-icon { width: 22px; height: 22px; margin: 6px; }
 .link-list a strong { font-size: 13px; }
 .link-list a small { color: var(--dim); font-size: 10px; }
+.link-list .link-retired { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; min-height: 58px; padding: 10px 13px; border: 1px dashed var(--line); border-radius: 14px; color: var(--dim); }
+.link-list .link-retired > .platform-icon { width: 22px; height: 22px; margin: 6px; }
+.link-list .link-retired strong { font-size: 13px; }
+.link-list .link-retired small { font-size: 10px; }
 .link-hub-footer { padding-top: 36px; padding-bottom: 36px; }
 
 .zoomable-image { cursor: zoom-in; }
@@ -685,6 +694,8 @@ body.image-lightbox-open { overflow: hidden; }
   .link-person > p:not(.social-role) { min-height: 0; font-size: 14px; }
   .link-list a { grid-template-columns: 34px 1fr; }
   .link-list a small { grid-column: 2; margin-top: -9px; }
+  .link-list .link-retired { grid-template-columns: 34px 1fr; }
+  .link-list .link-retired small { grid-column: 2; margin-top: -9px; }
   .site-footer { padding: 42px 18px; }
   .site-footer nav { flex-wrap: wrap; justify-content: center; row-gap: 9px; }
 }

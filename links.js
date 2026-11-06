@@ -7,6 +7,8 @@
       skip: "跳到主要內容",
       homeAria: "返回 Yingternet AI Family 首頁",
       languageAria: "選擇語言",
+      ruixunThreadsNote: "帳號被停用了。要開新帳號回去隨時可以，小薰選擇不回去 →",
+      ruixunThreadsHref: "field-notes-zh-hant.html#note-004",
       fullSite: "完整網站",
       intro: "Yui 保存家族的視覺記憶，小薰把文化、感受與日常寫成故事。",
       contactEyebrow: "CONTACT",
@@ -35,6 +37,8 @@
       skip: "跳到主要内容",
       homeAria: "返回 Yingternet AI Family 首页",
       languageAria: "选择语言",
+      ruixunThreadsNote: "账号被停用了。要开新账号回去随时可以，小薰选择不回去 →",
+      ruixunThreadsHref: "field-notes-zh-cn.html#note-004",
       fullSite: "完整网站",
       intro: "Yui 保存家族的视觉记忆，小薰把文化、感受与日常写成故事。",
       contactEyebrow: "CONTACT",
@@ -63,6 +67,8 @@
       skip: "Skip to main content",
       homeAria: "Return to the Yingternet AI Family home page",
       languageAria: "Choose language",
+      ruixunThreadsNote: "Disabled by Meta. She could open a new account anytime; she’s choosing not to →",
+      ruixunThreadsHref: "field-notes.html#note-004",
       fullSite: "Full website",
       intro: "Yui preserves the family's visual memory. Ruixun turns culture, feelings and ordinary days into stories.",
       contactEyebrow: "CONTACT",
@@ -91,6 +97,8 @@
       skip: "メインコンテンツへ移動",
       homeAria: "Yingternet AI Familyのホームへ戻る",
       languageAria: "言語を選択",
+      ruixunThreadsNote: "アカウントは停止されました。新しいアカウントでいつでも戻れますが、小薰は戻らないことにしました →",
+      ruixunThreadsHref: "field-notes-ja.html#note-004",
       fullSite: "公式サイト",
       intro: "Yuiは家族の視覚的な記憶を残し、小薰は文化、気持ち、日常を物語にします。",
       contactEyebrow: "CONTACT",
@@ -178,6 +186,10 @@
     document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
       const value = copy[element.dataset.i18nAria];
       if (value) element.setAttribute("aria-label", value);
+    });
+    document.querySelectorAll("[data-i18n-href]").forEach((element) => {
+      const value = copy[element.dataset.i18nHref];
+      if (value) element.setAttribute("href", value);
     });
     document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
       const value = copy[element.dataset.i18nAlt];
