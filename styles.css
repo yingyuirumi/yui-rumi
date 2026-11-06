@@ -118,9 +118,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
   gap: clamp(42px, 6vw, 88px);
   padding-top: 86px;
   padding-bottom: 90px;
+  position: relative;
 }
 .eyebrow { margin: 0 0 20px; color: var(--violet-bright); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
 .live-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+.hero-update { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; max-width: 100%; margin: 0; padding: 7px 14px; border: 1px solid var(--line-bright); border-radius: 999px; background: rgba(169,135,255,.10); color: var(--text); font-size: 12px; font-weight: 700; text-decoration: none; transition: border-color .2s ease; }
+.hero-update:hover, .hero-update:focus-visible { border-color: var(--cyan); }
+.hero-update-label { color: var(--cyan); font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.hero-update-note { color: var(--violet-bright); }
+.hero-update-top { position: absolute; top: 22px; left: 0; z-index: 2; display: none; }
+.hero-update-photo { position: absolute; top: -20px; left: -26px; z-index: 3; background: rgba(15,11,27,.87); backdrop-filter: blur(15px); box-shadow: 0 16px 40px rgba(0,0,0,.3); }
 .hero h1, .section-heading h2, .ying-copy h2 {
   margin: 0;
   font-size: clamp(3.2rem, 7vw, 6.6rem);
@@ -502,6 +509,8 @@ body.image-lightbox-open { overflow: hidden; }
 .accent-gold { --accent: #f1cc72; }.accent-blue { --accent: #76a9ff; }.accent-cyan { --accent: #62d8e7; }.accent-moon { --accent: #91a7c5; }
 
 @media (max-width: 1000px) {
+  .hero-update-top { display: inline-flex; }
+  .hero-update-photo { display: none; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-copy { max-width: 760px; }
   .hero-visual { width: min(580px, 100%); margin: 20px auto 0; justify-self: center; }
@@ -578,7 +587,8 @@ body.image-lightbox-open { overflow: hidden; }
   .brand-mark { width: 40px; height: 40px; }
   .brand-copy strong { font-size: 12px; }
   .brand-copy small { font-size: 8px; }
-  .hero { gap: 28px; padding-top: 52px; padding-bottom: 64px; }
+  .hero { gap: 28px; padding-top: 60px; padding-bottom: 64px; }
+  .hero-update-top { top: 12px; }
   .hero h1 { font-size: clamp(3rem, 15vw, 4rem); }
   .hero-lead { margin-top: 22px; font-size: 18px; }
   .hero-body { font-size: 14px; }
