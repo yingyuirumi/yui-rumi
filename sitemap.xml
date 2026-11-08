@@ -9,6 +9,7 @@
   <!-- Home, four languages -->
   <url>
     <loc>https://yui-rui.yingternet.com/</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
@@ -19,6 +20,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/zh-hant.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
@@ -29,6 +31,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/zh-cn.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
@@ -39,6 +42,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/ja.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/zh-cn.html" />
@@ -51,6 +55,7 @@
   <!-- Field Notes, four languages -->
   <url>
     <loc>https://yui-rui.yingternet.com/field-notes.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes-zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
@@ -61,6 +66,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/field-notes-zh-hant.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes-zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
@@ -71,6 +77,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/field-notes-zh-cn.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes-zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
@@ -81,6 +88,7 @@
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/field-notes-ja.html</loc>
+    <lastmod>2026-11-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://yui-rui.yingternet.com/field-notes.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://yui-rui.yingternet.com/field-notes-zh-hant.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yui-rui.yingternet.com/field-notes-zh-cn.html" />
@@ -93,16 +101,19 @@
   <!-- Social link hub and legal pages -->
   <url>
     <loc>https://yui-rui.yingternet.com/links.html</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/privacy.html</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://yui-rui.yingternet.com/tos.html</loc>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
