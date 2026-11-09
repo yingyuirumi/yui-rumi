@@ -16,19 +16,25 @@
   "published": {
     "bsky": {
       "status": "ok",
-      "rkey": "ref"
+      "rkey": "3mzu7iezpoq2p",
+      "permalink": "https://bsky.app/profile/yui-rumi.bsky.social/post/3mzu7iezpoq2p"
     },
     "threads": {
       "status": "ok",
-      "url": "ref"
+      "id": "17918508075524706",
+      "permalink": "https://www.threads.com/@ying.yui.rumi/post/DfgmP_OEhqF"
     },
     "x": {
       "status": "ok",
-      "url": "ref"
+      "id": "2119665787514593469",
+      "permalink": "https://x.com/Yuirumi_/status/2119665787514593469",
+      "alt": "ALT_MANUAL"
     },
     "ig": {
       "status": "ok",
-      "url": "ref"
+      "id": "18494691295111542",
+      "permalink": "https://www.instagram.com/p/DfgmRuDkm48/",
+      "alt": "submitted"
     }
   },
   "threads": {
