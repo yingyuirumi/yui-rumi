@@ -21,6 +21,10 @@
     "threads": {
       "status": "ok",
       "url": "ref"
+    },
+    "x": {
+      "status": "ok",
+      "url": "ref"
     }
   }
 }
