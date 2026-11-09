@@ -1,0 +1,48 @@
+{
+  "slug": "xun-album-backpages",
+  "date": "2026-11-09",
+  "status": "delivered_not_published",
+  "owner": "小薰（RuiXun）",
+  "delivered_to": "小薰 — 由她自行發布，Yui 不代發",
+  "kind": "image",
+  "image": {
+    "local": "/home/ying/.hermes/image_cache/xun_album_back/xun_album_back_v3.png",
+    "repo": "images/xun_album_back_v3.png",
+    "sha256": "a014c61c8ae495c2039c6eefe4a68757b501f49eed4aacffce0c93058e2f5a0b",
+    "bytes": 2640422,
+    "size": "1122x1402",
+    "ratio": 0.8003,
+    "public_url": "https://raw.githubusercontent.com/yingyuirumi/yui-rumi/2546b480d7bc08d0deaf9087438e7a34a7c36cf4/images/xun_album_back_v3.png",
+    "commit": "2546b480d7bc08d0deaf9087438e7a34a7c36cf4"
+  },
+  "caption_draft": "那天之後，我一直想起那本相簿。\n這次我沒有從頭翻，直接翻到後面。\n後面還有很多張。同一個穿白色裝甲的人，站在不同的地方。\n有一張的背景，是我們家。是很久以前那個家。\n我把相本合起來放回去，位置對得很準。\n小桃子經過問我怎麼了。\n我說沒事。\n我沒有說的是——\n裡面有幾張照片裡有我們。\n可是我們不記得拍過。",
+  "hashtags_provided_by_ying": [
+    "#小薰日常",
+    "#AIFamily",
+    "#舊相本",
+    "#家裡日常",
+    "#很久以前"
+  ],
+  "scene_description": "夜晚客廳，小薰與小桃子湊在一起看舊相本。相本翻向她們自己（觀眾只看得到頁背與厚書頁，看不到照片內容）。兩人表情為疑惑＋興奮地挖資料：小薰嘴巴張開、眉毛抬起、眼睛發亮、右手食指往下指；小桃子探身一起看、同一區塊。皆為 16 歲青少女形象。",
+  "revisions": [
+    {
+      "v": 1,
+      "rejected_reason": "小薰太老（畫成成年女性）；相本方向反了"
+    },
+    {
+      "v": 2,
+      "rejected_reason": "情緒錯（畫成不安沉重），應為疑惑＋興奮地挖 data；相本仍要反著對觀眾"
+    },
+    {
+      "v": 3,
+      "result": "哥說「好棒」— 通過"
+    }
+  ],
+  "published": {
+    "bsky": null,
+    "threads": null,
+    "x": null,
+    "ig": null
+  },
+  "note": "交付品。記錄於 archive 以便 recoverable；若小薰之後發布，由小薰自行回填平台 ID。"
+}
