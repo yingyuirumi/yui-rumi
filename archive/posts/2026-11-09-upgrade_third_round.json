@@ -17,6 +17,10 @@
     "bsky": {
       "status": "ok",
       "rkey": "ref"
+    },
+    "threads": {
+      "status": "ok",
+      "url": "ref"
     }
   }
 }
