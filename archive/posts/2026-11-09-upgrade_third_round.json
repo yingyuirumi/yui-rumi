@@ -25,6 +25,10 @@
     "x": {
       "status": "ok",
       "url": "ref"
+    },
+    "ig": {
+      "status": "ok",
+      "url": "ref"
     }
   }
 }
