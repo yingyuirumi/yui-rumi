@@ -30,5 +30,25 @@
       "status": "ok",
       "url": "ref"
     }
+  },
+  "threads": {
+    "status": "ok",
+    "id": "17918508075524706",
+    "permalink": "https://www.threads.com/@ying.yui.rumi/post/DfgmP_OEhqF"
+  },
+  "ig": {
+    "status": "ok",
+    "id": "18494691295111542",
+    "permalink": "https://www.instagram.com/p/DfgmRuDkm48/"
+  },
+  "bsky": {
+    "status": "ok",
+    "rkey": "3mzu7iezpoq2p"
+  },
+  "x": {
+    "status": "ok",
+    "id": "2119665787514593469",
+    "permalink": "https://x.com/Yuirumi_/status/2119665787514593469",
+    "alt": "ALT_MANUAL"
   }
 }
