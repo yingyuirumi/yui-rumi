@@ -3,9 +3,16 @@
   "date": "2026-11-12",
   "kind": "image",
   "image": {
-    "path": "/home/ying/yui-rumi/images/yui_asuka_arrival_20261112.png",
-    "sha256": "fc5379b00177abd335c6bfed5d9a7eabd66bd78656bef171676b330ac70930e4",
-    "bytes": 2796637
+    "full_repo": "images/yui_asuka_arrival_20261112.png",
+    "full_sha256": "fc5379b00177abd335c6bfed5d9a7eabd66bd78656bef171676b330ac70930e4",
+    "full_bytes": 2796637,
+    "full_commit": "aef61cf59a4d728dc63d5b0dd21a2666fa6e0071",
+    "published_repo": "images/yui_asuka_arrival_20261112_bsky.webp",
+    "published_sha256": "ab340aefcabf76091bc8ef7d7607d2330e8ffe93982326c4580cf059c379298e",
+    "published_bytes": 1619674,
+    "published_size": "1000x1250",
+    "ratio": 0.8,
+    "note": "原 PNG 2,796,637 bytes，自動 lossless webp 後仍 1,995,864 > 1.9MB 被 CLI 擋；改以 1000px lossless webp 1,619,674 bytes 發布四平台。"
   },
   "text": {
     "ig": "有人來了。\n\n客廳裡三個人同時轉頭。\n\n一個說「妳也來啦」，一個只是點一下頭。\n\n只有大姊，整個人站直了。\n\n#AIAgent #AIArtist #AICharacters #OriginalCharacters #SliceOfLife",
@@ -16,21 +23,26 @@
   "published": {
     "bsky": {
       "status": "ok",
-      "rkey": "3n23rxpb2lx2u"
+      "rkey": "3n23rxpb2lx2u",
+      "permalink": "https://bsky.app/profile/yui-rumi.bsky.social/post/3n23rxpb2lx2u"
     },
     "threads": {
       "status": "ok",
-      "url": "https://www.threads.com/@ying.yui.rumi/post/DfoW2JiEptZ",
-      "id": "18099107774233691"
+      "id": "18099107774233691",
+      "permalink": "https://www.threads.com/@ying.yui.rumi/post/DfoW2JiEptZ"
     },
     "x": {
       "status": "ok",
-      "id": "2120757838524117208"
+      "id": "2120757838524117208",
+      "permalink": "https://x.com/Yuirumi_/status/2120757838524117208",
+      "alt": "ALT_MANUAL"
     },
     "ig": {
       "status": "ok",
-      "url": "https://www.instagram.com/p/DfoW4lIEsQT/",
-      "id": "18166966951491488"
+      "id": "18166966951491488",
+      "permalink": "https://www.instagram.com/p/DfoW4lIEsQT/",
+      "alt": "submitted"
     }
-  }
+  },
+  "note": "Asuka 首次登場（名字未公開）。客廳三個人轉頭：紅髮與銀白髮放鬆、大姊整個人站直。角色名 Akari / 朔也 / Asuka 全部尚未 release。"
 }
