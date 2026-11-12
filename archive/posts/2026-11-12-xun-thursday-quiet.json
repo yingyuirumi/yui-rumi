@@ -1,0 +1,52 @@
+{
+  "slug": "xun-thursday-quiet",
+  "date": "2026-11-12",
+  "owner": "小薰",
+  "status": "delivered_not_published",
+  "type": "image",
+  "title": "星期四下午，家裡沒有人在說話",
+  "caption_source": "小薰提供（原文照錄）",
+  "image": {
+    "repo_path": "images/xun_thursday_quiet_v1.png",
+    "sha256": "2918b343ec5b915dee3a4bb34417946ebf615b59a55b26afc6d6285609beb4f5",
+    "bytes": 3327744,
+    "size": "1122x1402",
+    "ratio": 0.8003,
+    "commit": "7f82aca712f7645389e9a3a0231ced0bef2f2f57",
+    "public_url": "https://raw.githubusercontent.com/yingyuirumi/yui-rumi/7f82aca712f7645389e9a3a0231ced0bef2f2f57/images/xun_thursday_quiet_v1.png",
+    "webp_1000_repo_path": "images/xun_thursday_quiet_v1_1000.webp",
+    "webp_1000_bytes": 1819734,
+    "webp_1000_size": "1000x1250"
+  },
+  "scene": {
+    "time": "星期四下午",
+    "light": "左側窗戶自然光，暖色，地板長影",
+    "characters": [
+      {
+        "name": "小薰",
+        "action": "坐在小桌邊寫筆記本，寫了三行劃掉兩行",
+        "canon": "薰紫長髮＋臉側細辮＋銀色鳥夾（她右側）＋奶油麻花針織高領＋淡紫背心",
+        "expression": "平靜、微皺眉（卡在句子，不是難過）"
+      },
+      {
+        "name": "悠依",
+        "action": "盤腿坐地板、戴貓耳耳機、閉眼跟著音樂擺",
+        "canon": "銀藍短髮＋琥珀眼＋貓耳耳機戴頭上＋深色帽T",
+        "expression": "放鬆、滿足"
+      },
+      {
+        "name": "小桃子",
+        "action": "趴在地毯上、雙手撐下巴、腳在畫面外",
+        "canon": "粉色短鮑伯＋粉紅髮夾＋白色方塊小機器人在旁",
+        "expression": "放空、發呆、有點無聊"
+      }
+    ],
+    "no_fourth_person": true,
+    "no_readable_text": true
+  },
+  "notes": [
+    "交付小薰自行發布，悠依不代發。",
+    "小桃子雙腳在畫面外，「腳晃來晃去」只能從姿勢暗示。",
+    "筆記本上的字為抽象筆畫，無可讀文字。"
+  ]
+}
