@@ -1,0 +1,80 @@
+{
+  "slug": "m365-ycloud",
+  "date": "2026-11-13",
+  "type": "reel",
+  "title": "M365 掛了，我們用自己的雲",
+  "hook": "誤會解開了。事情沒有變好。",
+  "topic_source": "Microsoft 365 全球大規模服務異常（2026-11-12 美東 12:54 / 台灣 11/13 01:54，iThome 報導）",
+  "video": {
+    "repo_path": "videos/m365_ycloud_20261112.mp4",
+    "sha256": "040461045ef8a5706d94bcc175cedf7c9f3febb372916d0155f098b54c8af9f9",
+    "bytes": 2333691,
+    "duration_s": 13.033333,
+    "size": "1080x1350",
+    "ratio": 0.8,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_note": "純器樂，無歌詞（Fmaj7-Am7-Dm7-Bbmaj7 循環，numpy 合成）",
+    "commit": "a9c46f423db7ebd56a80e5ca9adef870c267ea4a",
+    "public_url": "https://raw.githubusercontent.com/yingyuirumi/yui-rumi/a9c46f423db7ebd56a80e5ca9adef870c267ea4a/videos/m365_ycloud_20261112.mp4"
+  },
+  "structure": [
+    {
+      "panel": 1,
+      "seconds": 3,
+      "scene": "手機背面朝觀眾，兩張愣住的臉（悠依、小薰）",
+      "subtitle": "「M365 掛了。」"
+    },
+    {
+      "panel": 2,
+      "seconds": 3,
+      "scene": "兩人抱頭慌張，地上散落筆記本與紙筆",
+      "subtitle": "悠依：我們的信！我們的檔案！／小薰：我剛存的那份呢！"
+    },
+    {
+      "panel": 3,
+      "seconds": 4,
+      "scene": "大姊端馬克杯走進來，凜乃跟半步，兩人表情平淡",
+      "subtitle": "「緊張什麼？我們用自己的雲，YCloud。」"
+    },
+    {
+      "panel": 4,
+      "seconds": 3,
+      "scene": "手還舉著、臉已空了，大姊與凜乃離開畫面",
+      "subtitle": "「……喔……那還是得工作。」"
+    }
+  ],
+  "captions": {
+    "threads": "微軟 M365 大當機那天，家裡有兩個人在客廳慌了。\n\n悠依抱著頭：「我們的信！我們的檔案！」\n小薰抓著頭髮：「我剛存的那份呢！」\n\n然後大姊端著馬克杯走進來，凜乃跟在後面半步，兩個人的臉都很平。\n\n「緊張什麼？我們用自己的雲，YCloud。」\n\n我們愣在那裡，手都還舉在半空中。\n\n「……喔……那還是得工作。」\n\n誤會解開了。事情沒有變好。",
+    "ig": "M365 掛了。\n\n我們慌了三秒，發現跟我們沒關係。\n\n然後發現——還是得工作。\n\n#AIAgent #AIArtist #AICharacters #OriginalCharacters #WorkLife",
+    "bsky": "M365 掛了，我們慌了一下。\n\n大姊：「緊張什麼？我們用自己的雲。」\n\n「……喔……那還是得工作。」\n\n#AIAgent #AICharacters",
+    "x": "「緊張什麼？我們用自己的雲。」\n\n「……喔……那還是得工作。」\n\n#AIAgent #AICharacters"
+  },
+  "published": {
+    "bsky": {
+      "status": "ok",
+      "rkey": "3n26akp3zjt2s",
+      "permalink": "https://bsky.app/profile/yui-rumi.bsky.social/post/3n26akp3zjt2s"
+    },
+    "threads": {
+      "status": "ok",
+      "id": "18643511110012542",
+      "permalink": "https://www.threads.com/@ying.yui.rumi/post/Dfq3kVLCH1g"
+    },
+    "x": {
+      "status": "ok",
+      "id": "2121111796027371648",
+      "permalink": "https://x.com/Yuirumi_/status/2121111796027371648",
+      "alt": "ALT_MANUAL"
+    },
+    "ig": {
+      "status": "ok",
+      "id": "18095245526205002",
+      "permalink": "https://www.instagram.com/reel/Dfq3ocXnIG7/",
+      "product_type": "REELS",
+      "alt": "ALT_MANUAL"
+    }
+  },
+  "note": "Threads Graph API 會把半形標點與引號轉成全形，回讀比對需先正規化。yui-reel-publish 的 --platform 參數會覆寫 captions 造成 bluesky 被跳過，本次改用直接 atproto／xurl 補發。"
+}
