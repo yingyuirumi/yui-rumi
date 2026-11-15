@@ -17,6 +17,11 @@
     "bsky": {
       "status": "ok",
       "rkey": "3n2djmj62cy2e"
+    },
+    "threads": {
+      "status": "ok",
+      "url": "https://www.threads.com/@ying.yui.rumi/post/DfwSCS0klv1",
+      "id": "17866946097691922"
     }
   }
 }
