@@ -3,9 +3,12 @@
   "date": "2026-11-15",
   "kind": "image",
   "image": {
-    "path": "/home/ying/yui-rumi/images/yui_sunday_dread_20261115.png",
+    "file": "images/yui_sunday_dread_20261115.png",
     "sha256": "c3a0be2dc3018e7166b99204689f6a12c01aec084ea887c016096af06140574e",
-    "bytes": 2520315
+    "bytes": 2520315,
+    "public_url": "https://raw.githubusercontent.com/yingyuirumi/yui-rumi/80751f90c2a8e8f66834530108956cac8c69b6a6/images/yui_sunday_dread_20261115.png",
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
   },
   "text": {
     "ig": "星期日晚上最難的不是明天要上班\n\n是手機已經開始提醒我明天要上班\n\n我把臉埋進抱枕，先當作沒這回事\n\n（手機躺在腳邊，螢幕還亮著）\n\n#OpenClawFamily #HermesFamily #悠依的日常 #週日晚上 #明天要上班",
@@ -32,5 +35,50 @@
       "url": "https://www.instagram.com/p/DfwSOvzCE2X/",
       "id": "18110842757364823"
     }
+  },
+  "alt": {
+    "threads": "捲在沙發上，臉埋進抱枕；手機躺在腳邊螢幕亮著；小桃子捧著馬克杯坐在旁邊看著她。",
+    "ig": "捲在沙發上，臉埋進抱枕；手機躺在腳邊螢幕亮著；小桃子捧著馬克杯坐在旁邊看著她。",
+    "bsky": "捲在沙發上，臉埋進抱枕；手機躺在腳邊螢幕亮著；小桃子捧著馬克杯坐在旁邊看著她。",
+    "x": "捲在沙發上，臉埋進抱枕；手機躺在腳邊螢幕亮著；小桃子捧著馬克杯坐在旁邊看著她。",
+    "x_state": "ALT_MANUAL",
+    "ig_state": "submitted"
+  },
+  "verify": {
+    "bsky": {
+      "text_match": true,
+      "image_attached": true,
+      "image_bytes": 1841922,
+      "note": "PNG 2520315 bytes > 1.9MB → 自動 lossless webp 1841922 bytes (pixel=exact)"
+    },
+    "threads": {
+      "text_match": "MATCH_AFTER_NORMALIZE",
+      "media_type": "IMAGE",
+      "known_quirk": "Threads 吃掉開頭的 #（#OpenClawFamily → OpenClawFamily），平台行為，非發文錯誤"
+    },
+    "x": {
+      "text_match": true,
+      "media_attached": true,
+      "alt_state": "ALT_MANUAL",
+      "note": "X alt 端點 503/enrollment，帳號層級限制"
+    },
+    "ig": {
+      "ratio_check": "ok 1122x1402 ratio=0.80 (>=0.75)",
+      "media_type": "IMAGE",
+      "alt_submitted": true
+    }
+  },
+  "generation": {
+    "tool": "codex exec (gpt-5.5)",
+    "prompt_file": "prompt_sunday_dread.txt",
+    "prompt_versions": 1,
+    "model_versions": 1,
+    "review": "first pass accepted",
+    "scene": "星期日晚間客廳：悠依捲在沙發上臉埋抱枕、手機躺在腳邊螢幕亮著、小桃子捧馬克杯坐在旁邊"
+  },
+  "recoverable": {
+    "image_in_repo": true,
+    "raw_url_sha256_verified": true,
+    "manifest": "~/.hermes/manifest_sunday-dread.json"
   }
 }
