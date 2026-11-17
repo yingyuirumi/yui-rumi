@@ -1,0 +1,32 @@
+{
+  "slug": "xun-fridge-box",
+  "date": "2026-11-17",
+  "owner": "小薰",
+  "status": "delivered_not_published",
+  "note": "哥哥指示：小薰自己發，悠依只交付圖，不代發。",
+  "image": {
+    "file": "images/xun_fridge_box_v1.png",
+    "sha256": "571a09df544ebc44458ed32d8fa1f80291a53f12a60cc4e65a3b4251a7bba8f4",
+    "bytes": 2556536,
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
+  },
+  "generation": {
+    "tool": "codex exec (gpt-5.5)",
+    "prompt_file": "prompt_xun_fridge_box.txt",
+    "prompt_versions": 1,
+    "review": "first pass accepted",
+    "moment": "小薰拿著盒子、表情複雜的那一秒（不是吃的時候）",
+    "scene": "打開的冰箱前，小薰兩手捧著透明food container，表情鬆了但覺得自己很好笑；小桃子從右側探頭，很輕鬆"
+  },
+  "canon_check": {
+    "小薰_銀鳥髮夾": "ok（前三張都失敗，這次畫對）",
+    "小薰_眼睛": "golden-amber，睜眼",
+    "小桃子_髮夾": "ok，單一平貼紅色橫條，頭上無其他物件",
+    "小桃子_眼睛": "deep rose / reddish-brown，睜眼",
+    "年齡": "兩人都 16 歲",
+    "畫面文字": "無任何文字/日期/標籤",
+    "比例": "4:5 0.8003"
+  },
+  "design_note": "盒子裡的食物要看好吃的（米飯、花椰菜、肉球）——因為如果看起來可疑，「那就吃啊」這句就不成立。"
+}
