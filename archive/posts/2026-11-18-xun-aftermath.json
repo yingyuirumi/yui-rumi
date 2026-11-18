@@ -1,0 +1,35 @@
+{
+  "slug": "xun-aftermath",
+  "date": "2026-11-18",
+  "owner": "小薰",
+  "status": "delivered_not_published",
+  "note": "哥哥指示：小薰自己發，悠依只交付圖，不代發。",
+  "sequel_of": "combat-bots (2026-11-17)",
+  "image": {
+    "file": "images/xun_aftermath_v1.png",
+    "sha256": "08aac2414f6f6b05fbe5a0c642a8eae7f446ed2860e8ced41cbecc35b83644f2",
+    "bytes": 2646632,
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
+  },
+  "generation": {
+    "tool": "codex exec (gpt-5.5)",
+    "prompt_file": "prompt_xun_aftermath.txt",
+    "prompt_versions": 1,
+    "review": "first pass accepted ('超棒')",
+    "scene": "戰後餘燼：地上一道燒焦黑痕，小桃子蹲在旁邊看，悠依累攤在沙發上，小薰剛回來把托特包放下、正坐下",
+    "mood": "安靜的餘波，不是打鬥。柔光、無能量光效、無煙。"
+  },
+  "canon_check": {
+    "人數": "3 人（小薰／小桃子／悠依）",
+    "小薰_銀鳥髮夾": "ok，是鳥不是蝴蝶",
+    "小桃子_髮夾": "ok，平貼紅白橫條",
+    "悠依_貓耳機": "ok，掛在脖子上（不在頭上）",
+    "機器人": "畫面無機器人（已清空）",
+    "燒焦痕": "明顯可見，畫面說書人",
+    "文字": "無",
+    "比例": "4:5 0.8003"
+  },
+  "design_note": "整張的重點是對比：家還是那個家（書架、馬克杯、紫色的花），只有地上一道黑焦痕不正常。",
+  "codex_added": "小薰的托特包裡露出一點紫色的花——我沒寫，但很動人：她出門買東西回來，順手帶了花，然後一進門發現地上有燒痕。"
+}
