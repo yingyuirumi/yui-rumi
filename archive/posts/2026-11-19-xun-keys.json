@@ -1,0 +1,33 @@
+{
+  "slug": "xun-keys",
+  "date": "2026-11-19",
+  "owner": "小薰",
+  "status": "delivered_not_published",
+  "note": "哥哥指示：小薰自己發，悠依只交付圖，不代發。",
+  "image": {
+    "file": "images/xun_keys_v1.png",
+    "sha256": "2001c76a542953ce8f696bd55285c035e9c2f8ec6038117a26f17729fe2bf098",
+    "bytes": 2439304,
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
+  },
+  "generation": {
+    "tool": "codex exec (gpt-5.5)",
+    "prompt_file": "prompt_xun_keys.txt",
+    "prompt_versions": 1,
+    "review": "first pass accepted ('超棒的圖')",
+    "scene": "玄關：小桃子舉著鑰匙得意地笑（剛找到）；背景客廳小薰捧馬克杯、悠依坐沙發，兩人都坐著沒起身",
+    "joke_part1": "她的得意 —— 自己放的、自己忘了，找到那一刻還是覺得自己是天才",
+    "joke_part2": "大家都不動 —— 因為早就知道她一定找得到"
+  },
+  "canon_check": {
+    "人數": "3 人（小桃子 foreground + 小薰、悠依 background）",
+    "小桃子_髮夾": "ok，平貼紅色橫條，頭上無其他物件",
+    "小薰_銀鳥髮夾": "ok，是鳥不是蝴蝶",
+    "悠依_貓耳機": "ok，掛在脖子上",
+    "背景人物": "兩人都坐著、都沒有起身",
+    "文字": "無",
+    "比例": "4:5 0.8003"
+  },
+  "known_gap": "手沒有畫成『從鞋櫃最上層伸出來』——實際是舉在半空、櫃門開著。判斷可接受：兩個笑點（得意＋大家不動）都成立，『從哪拿的』交給文案說明即可。哥哥看過圖後說超棒，未要求重畫。"
+}
