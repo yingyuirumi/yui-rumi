@@ -1,0 +1,35 @@
+{
+  "slug": "xun-heater",
+  "date": "2026-11-21",
+  "owner": "小薰",
+  "status": "delivered_not_published",
+  "note": "哥指示：小薰自己發，悠依只交付圖，不代發。",
+  "image": {
+    "file": "images/xun_heater_v1.png",
+    "sha256": "776638a29e8845fe6dc67893977772bbb4da7f33156f3d514686e8bcd899122d",
+    "bytes": 2539595,
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
+  },
+  "generation": {
+    "tool": "codex exec (gpt-5.5)",
+    "prompt_file": "prompt_xun_heater.txt",
+    "prompt_versions": 1,
+    "review": "first pass accepted ('超棒')",
+    "scene": "客廳暖爐前，小桃子站直很嚴肅地教學（手指著控制面板、眉毛微皺、眼睛發亮），小薰在旁邊聽課點頭（嘴巴閉著、很淡的笑、眼睛看著小桃子而不是暖爐）；暖爐白＋深灰、控制面板有按鈕、橘色指示燈亮著",
+    "emotion_core": "小薰早就會了，但沒有說——因為小桃子講得那麼認真，眼睛亮亮的",
+    "unpaintable": "「其實我早就會了」在畫面看不到，全靠小薰的表情：「讓妳教完」的臉，不是「學到了」的臉",
+    "deliberately_not_painted": "最後那個「把手伸過去按了那一個鍵」沒有畫——那是她走回沙發之後才發生的事，畫進去就變成在她面前炫耀"
+  },
+  "canon_check": {
+    "人數": "2 人（小桃子 + 小薰）",
+    "小桃子": "平貼紅色橫條髮夾、頭上無其他物件、粉短髮、深紅棕眼",
+    "小薰": "薰紫長髮＋兩側細辮、銀鳥髮夾（是鳥不是蝴蝶）、琥珀眼帶淡紫環",
+    "暖爐": "控制面板可見、橘色指示燈亮",
+    "文字": "無",
+    "比例": "4:5 0.8003"
+  },
+  "recoverable": {
+    "image_in_repo": true
+  }
+}
