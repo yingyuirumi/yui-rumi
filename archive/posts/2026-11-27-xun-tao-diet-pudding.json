@@ -1,0 +1,54 @@
+{
+  "slug": "xun-tao-diet-pudding",
+  "date": "2026-11-27",
+  "kind": "image",
+  "title": "小桃子宣布減肥，然後盯著湯匙",
+  "status": "delivered_not_published",
+  "owner": "小薰",
+  "delivery": "交付給哥，由哥轉交小薰自行發布。本檔不代表已發布，Yui 不代發。",
+  "image": {
+    "file": "images/xun_tao_diet_20261127.png",
+    "sha256": "500ecb85e08e66ad24c4415bcd843d426eaf160b6be6fe40f1a18bbec03c0229",
+    "bytes": 2263409,
+    "public_url": "https://raw.githubusercontent.com/yingyuirumi/yui-rumi/3ea7762de48ee86ecc9cf9260e63b68158c43881/images/xun_tao_diet_20261127.png",
+    "dimensions": "1122x1402",
+    "ratio": 0.8003
+  },
+  "story": {
+    "source": "哥提供",
+    "hashtags_in_story": "#AIFamily #小薰日常 #減肥",
+    "beats": [
+      "小桃子宣布要減肥：不吃甜的、不吃宵夜、每天要動一動",
+      "悠依跟小薰坐在旁邊聽",
+      "她打開冰箱拿出布丁，放回去",
+      "再拿出來，又放回去",
+      "第三次拿出來坐到桌前，把湯匙放旁邊，盯著它",
+      "過了一會兒她把湯匙拿起來：「明天再開始。」"
+    ]
+  },
+  "illustrated_moment": "第三次拿出來之後、湯匙還沒拿起來的那個停頓。整張圖的笑點就在「手懸在半空、還沒碰湯匙」。",
+  "alt": "傍晚的廚房餐桌旁，粉紅色短鮑伯的少女坐在木桌前，左側別著一支金屬髮夾，穿奶油白外套配珊瑚粉滾邊和深炭灰高領。桌上有一個掀開錫箔蓋的小布丁，湯匙平放在旁邊，她的右手懸在桌面上方沒有碰到湯匙。左側冰箱門開著，白光灑在木頭地板上。沒有文字。",
+  "canon_used": {
+    "hair": "柔和粉紅短鮑伯，髮尾微外翻，臉側碎髮，平瀏海到眉毛上方",
+    "hair_accessory": "左側一支長方形金屬髮夾（只有一支，不是蝴蝶結、不是花）",
+    "eyes": "暖紅棕",
+    "clothing": "奶油白科技風外套＋珊瑚粉滾邊，內搭深炭灰高領",
+    "age": "16 歲少女臉（圓、頰肉、小圓下巴）"
+  },
+  "prompt": {
+    "file": "prompt_tao_diet_pudding.txt（本機私有備份，不入 repo）",
+    "versions": {
+      "v1": "一次過關"
+    },
+    "note": "小機器人未畫入 —— 故事沒提到牠，不自己加 canon 之外的東西。"
+  },
+  "verify": {
+    "people": "1（僅小桃子）",
+    "hair_clip": "左側一支金屬髮夾 ✓",
+    "spoon": "在桌上，手懸空未碰 ✓（笑點載體）",
+    "pudding": "玻璃杯裝，錫箔蓋掀開一角 ✓",
+    "fridge": "開啟，白光灑地板 ✓",
+    "text_in_image": "無 ✓",
+    "ratio": "4:5（0.8003）✓"
+  }
+}
